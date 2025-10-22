@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Urbanist, 'sans serif';
+    background-color: #F6FBE9;
+}
+
+.headerBanner {
+    background-color: #1A3129;
+    border-bottom: 1px solid #234338;
+    position: relative;
+    height: 94px;
+    padding: 40px 16px 14px 16px;
+    overflow: hidden;
+}
+
+.cta_Join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.backImg {
+    position: absolute;
+    bottom: -28%;
+    left: -21%;
+    height: 74px;
+    width: 143px;
+}
+
+.backImg2 {
+    position: absolute;
+    bottom: -50px;
+    right: -70px;
+    height: 74px;
+    width: 143px;
+    transform: scaleX(-1);
+}
+
+.cta_Join a {
+    text-decoration: none;
+    color: #FFF;
+    border: 1px solid #2C5446;
+    background-color:#234338;
+    padding: 7px 20px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta_Join a::before {
+    content: url('../images/cricket.ball.fill.png');
+    padding-top: 1%;
+}
+.cta_Join a::after {
+    content: url('../images/arrowRight.png');
+}
+nav {
+    background-color: #1A3129;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoImg {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 0 20px 16px;
+}
+/* will hide the checkbox */
+.menu-toggle {
+    display: none;
+}
+/* hambuger icon */
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px 16px 10px 0;
+}
+/* menu hidden by default */
+.main_nav {
+    position: absolute;
+    /* below nav */
+    top: 100%; 
+    left: 0;
+    right: 0;
+    /* so that overflow content does not show up */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .4s ease;
+}
+
+.main_nav li {
+    border-bottom: 1px solid #2C5446;
+}
+
+.main_nav li a {
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    text-align: center;
+    background-color: #1A3129;
+    color: #FDF2FA;
+}
+/* show menu when checkbox is checked */
+.menu-toggle:checked + .menu-icon + .main_nav {
+    max-height: 500px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main_nav li a:hover {
+    color: #CBEA7B;
+}
+
+.x-icon {
+    display: none;
+}
+/* when checked, hide hamburger and show X */
+.menu-toggle:checked + .menu-icon .hamburger {
+    display: none;
+}
+.menu-toggle:checked + .menu-icon .x-icon {
+    display: block;
+}
