@@ -6,14 +6,27 @@
     padding: 0;
 }
 
+:root {
+    --darkgreen15: #1A3129;
+    --darkgreen20: #234338;
+    --darkgreen25: #2C5446;
+    --darkgreen40: #468671;
+    --green70: #CBEA7B;
+    --green85: #E5F5BD;
+    --green95: #F6FBE9;
+    --green97: #FAFDF2;
+    --gray15: #262626;
+    --gray20: #333333;
+}
+
 body {
     font-family: Urbanist, 'sans serif';
-    background-color: #F6FBE9;
+    background-color: var(--green97);
 }
 
 .headerBanner {
-    background-color: #1A3129;
-    border-bottom: 1px solid #234338;
+    background-color: var(--darkgreen15);
+    border-bottom: 1px solid var(--darkgreen20);
     position: relative;
     height: 94px;
     padding: 40px 16px 14px 16px;
@@ -48,8 +61,8 @@ body {
 .cta_Join a {
     text-decoration: none;
     color: #FFF;
-    border: 1px solid #2C5446;
-    background-color:#234338;
+    border: 1px solid var(--darkgreen25);
+    background-color: var(--darkgreen20);
     padding: 7px 20px;
     border-radius: 6px;
     font-size: 0.75rem;
@@ -63,11 +76,13 @@ body {
     content: url('../images/cricket.ball.fill.png');
     padding-top: 1%;
 }
+
 .cta_Join a::after {
     content: url('../images/arrowRight.png');
 }
+
 nav {
-    background-color: #1A3129;
+    background-color: var(--darkgreen15);
     position: relative;
     z-index: 1;
     display: flex;
@@ -80,21 +95,24 @@ nav {
     align-items: flex-start;
     padding: 20px 0 20px 16px;
 }
+
 /* will hide the checkbox */
 .menu-toggle {
     display: none;
 }
+
 /* hambuger icon */
 .menu-icon {
     display: inline-block;
     cursor: pointer;
     padding: 20px 16px 10px 0;
 }
+
 /* menu hidden by default */
 .main_nav {
     position: absolute;
     /* below nav */
-    top: 100%; 
+    top: 100%;
     left: 0;
     right: 0;
     /* so that overflow content does not show up */
@@ -104,7 +122,7 @@ nav {
 }
 
 .main_nav li {
-    border-bottom: 1px solid #2C5446;
+    border-bottom: 1px solid var(--darkgreen25);
 }
 
 .main_nav li a {
@@ -112,11 +130,12 @@ nav {
     padding: 12px 0;
     text-decoration: none;
     text-align: center;
-    background-color: #1A3129;
+    background-color: var(--darkgreen15);
     color: #FDF2FA;
 }
+
 /* show menu when checkbox is checked */
-.menu-toggle:checked + .menu-icon + .main_nav {
+.menu-toggle:checked+.menu-icon+.main_nav {
     max-height: 500px;
 }
 
@@ -126,16 +145,133 @@ nav ul {
 }
 
 .main_nav li a:hover {
-    color: #CBEA7B;
+    color: var(--green70);
 }
 
 .x-icon {
     display: none;
 }
+
 /* when checked, hide hamburger and show X */
-.menu-toggle:checked + .menu-icon .hamburger {
+.menu-toggle:checked+.menu-icon .hamburger {
     display: none;
 }
-.menu-toggle:checked + .menu-icon .x-icon {
+
+.menu-toggle:checked+.menu-icon .x-icon {
     display: block;
+}
+
+/* Hero Part */
+.wrapper {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.nutriImg {
+    max-width: 100%;
+}
+
+.review-images {
+    position: relative;
+    display: inline-flex;
+    border: 1px solid var(--green70);
+    border-radius: 50px;
+    padding: 6px 8px;
+    background-color: var(--green97);
+}
+
+.review-images img {
+    width: 40px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.review-images img:not(:first-child) {
+    margin-left: -20px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper {
+    position: relative;
+    padding-bottom: 50px;
+}
+.review-images-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+.reviews p {
+    font-size: .85rem;
+    font-weight: 500;
+    margin-top: 4px;
+    color: var(--darkgreen20);
+}
+.numberStyle {
+    color: var(--darkgreen40);
+    font-weight: 600;
+    padding-right: 2px;
+}
+.primaryTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.underlinedText {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 25px;
+    text-decoration: underline;
+    text-decoration-color: var(--green70);
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 8px;
+    color: var(--darkgreen15);
+}
+.emoji::before {
+    content: '❤️ ';
+}
+.largeText {
+    font-size: 2.2rem;
+    margin: 16px 16px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--darkgreen15);
+}
+.regularP {
+    text-align: center;
+    margin: 0 16px;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: var(--gray20);
+}
+.buttonCTA {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.starterCTA {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--gray15);
+    background-color: var(--green70);
+    padding: 14px 16px;
+    border-radius: 6px;
+    margin-right: 14px;
+}
+.demoCTA {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--gray15);
+    background-color: var(--green95);
+    border: 1px solid var(--green85);
+    padding: 14px 20px;
+    border-radius: 6px;
 }

@@ -24,25 +24,31 @@
         <nav>
             <!-- Logo -->
             <picture class="logoImg">
-                <source media="(max-width: 320px)" srcset="./images/logoMobile.png">
-                <source media="(min-width: 321px) and (max-width: 1023px)" srcset="./images/logoLaptop.png">
+                <!-- for mobile -->
+                <source media="(max-width: 430px)" srcset="./images/logoMobile.png">
+                <!-- for laptop -->
+                <source media="(max-width: 1023px)" srcset="./images/logoLaptop.png">
+                <!-- for desktop -->
                 <source media="(min-width: 1024px)" srcset="./images/logoDesktop.png">
+                <!-- fallback -->
                 <img src="./images/logoDesktop.png" alt="logo">
             </picture>
 
             <!-- Hamburger toggle -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle" />
             <label for="menu-toggle" class="menu-icon">
-                <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 100 80" fill="#CBEA7B">
+                <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 100 80"
+                    fill="#CBEA7B">
                     <rect class="bar top" width="100" height="8" rx="4" />
                     <rect class="bar middle" y="32" width="100" height="8" rx="4" />
                     <rect class="bar bottom" y="64" x="50" width="50" height="8" rx="4" />
                 </svg>
                 <!-- X SVG -->
-                 <svg class="x-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 100 100" fill="#CBEA7B" >
-                    <line x1="0" y1="0" x2="70" y2="70" stroke="#CBEA7B" stroke-width="8" stroke-linecap="round"/>
-                    <line x1="70" y1="0" x2="0" y2="70" stroke="#CBEA7B" stroke-width="8" stroke-linecap="round"/>
-                 </svg>
+                <svg class="x-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 100 100"
+                    fill="#CBEA7B">
+                    <line x1="0" y1="0" x2="70" y2="70" stroke="#CBEA7B" stroke-width="8" stroke-linecap="round" />
+                    <line x1="70" y1="0" x2="0" y2="70" stroke="#CBEA7B" stroke-width="8" stroke-linecap="round" />
+                </svg>
             </label>
 
             <!-- Menu -->
@@ -58,38 +64,50 @@
         </nav>
     </header>
 
-    <!-- <main>
-        <section class="wrapper">
-            <picture class="nutriImg">
-                    
-                <source media="(max-width: 320px)" srcset="./images/nutriMobile.png">
-             
-                <source media="(min-width: 321px) and (max-width: 1023px)" srcset="./images/nutriLaptop.png">
-                
-                <source media="(min-width: 1024px)" srcset="./images/nutriDesktop.png">
-               
-                <img src="./images/nutriDesktop.png" alt="nutritionist image">
-            </picture>
+    <main>
+        <section>
+            <div class="wrapper">
+                <picture>
+                    <!-- for mobile -->
+                    <source media="(max-width: 430px)" srcset="./images/nutriMobile.png">
+                    <!-- for laptop -->
+                    <source media="(max-width: 1023px)" srcset="./images/nutriLaptop.png">
+                    <!-- for desktop -->
+                    <source media="(min-width: 1024px)" srcset="./images/nutriDesktop.png">
+                    <!-- fallback -->
+                    <img class="nutriImg" src="./images/nutriDesktop.png" alt="nutritionist image">
+                </picture>
+                <div class="review-images-wrapper">
+                    <div class="review-images">
+                        <img src="./images/review_img3.png" alt="testimonial person wearing pink blouse">
 
-            <div class="heroText"> -->
-    <!-- the following h1 has a class to style it different them the others -->
-    <!-- <h1 class="textStyle">Transform Your Health with</h1>
-                <h1>Personalized Nutrition Coaching</h1>
-                <p>Welcome to Nutritionist, your partner in achieving optimal health through personalized nutrition
-                    coaching. Our certified nutritionists are here to guide you on your weight loss journey, providing
-                    customized plans and ongoing support. Start your transformation today and experience the power of
-                    personalized nutrition coaching.</p>
-                <a href="" class="cta_getStarter">Get Starter Today</a>
-                <a href="" class="cta_bookDemo">Book a Demo</a>
+                        <img src="./images/review_img2.png" alt="testimonial person wearaing light green blouse">
+
+                        <img src="./images/review_img1.png" alt="testimonial person wearing dark green blouse">
+                    </div>
+                    <div class="reviews">
+                        <p>
+                            <span class="numberStyle">430+</span>Happy Costumers</p>
+                    </div>
+                </div>
             </div>
-            <div class="reviews">
-                <img src="./images/review_img3.png" alt="testimonial person wearing pink blouse">
-                <img src="./images/review_img2.png" alt="testimonial person wearaing light green blouse">
-                <img src="./images/review_img1.png" alt="testimonial person wearing dark green blouse">
-                <p>430+ Happy Costumers</p>
+            <div>
+                <h1 class="primaryTitle">
+                    <!-- span's were created so I could stylize on CSS without having multiples h1 -> accessibility issues -->
+                    <span class="underlinedText">Transform Your <span class="emoji">Health</span> with</span>
+                    <span class="largeText">Personalized Nutrition Coaching</span>
+                </h1>
             </div>
+            <p class="regularP">Welcome to Nutritionist, your partner in achieving optimal health through personalized nutrition
+                coaching. Our certified nutritionists are here to guide you on your weight loss journey, providing
+                customized plans and ongoing support. Start your transformation today and experience the power of
+                personalized nutrition coaching.</p>
+                <div class="buttonCTA">
+                    <a class="starterCTA" href="">Get Starter Today</a>
+                    <a class="demoCTA" href="">Book a Demo</a>
+                </div>
         </section>
-    </main> -->
+    </main>
 
 </body>
 
