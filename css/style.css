@@ -161,7 +161,7 @@ nav ul {
     display: block;
 }
 
-/* Hero Part */
+/* Hero Section starts here */
 .wrapper {
     overflow-x: hidden;
     width: 100%;
@@ -239,7 +239,7 @@ nav ul {
     content: '❤️ ';
 }
 .largeText {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     margin: 16px 16px;
     font-weight: 600;
     text-align: center;
@@ -249,7 +249,7 @@ nav ul {
     text-align: center;
     margin: 0 16px;
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: .875rem;
     color: var(--gray20);
 }
 .buttonCTA {
@@ -274,4 +274,63 @@ nav ul {
     border: 1px solid var(--green85);
     padding: 14px 20px;
     border-radius: 6px;
+}
+/* Features Section starts here */
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    line-height: 1.5;
+    color: var(--gray15);
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px 16px 0 16px;
+}
+.cards-item {
+    background-color: var(--green95);
+    border: 1px solid var(--green85);
+    padding: 30px;
+    border-radius: 10px;
+}
+.cards-item h3 {
+    color: var(--gray15);
+    font-weight: 600;
+    line-height: 1.5;
+    padding-bottom: 16px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.cards-item p {
+    color: var(--gray20);
+    line-height: 1.5;
+    font-size: .9rem;
+}
+.cards-item:nth-child(1) h3::before {
+    content: url('../images/flower-icon.png');
+    margin-right: 10px;
+}
+.cards-item:nth-child(2) h3::before {
+    content: url('../images/hat-icon.png');
+    margin-right: 10px;
+}
+.cards-item:nth-child(3) h3::before {
+    content: url('../images/cutterly-icon.png');
+    margin-right: 10px;
+}
+.cards-item:nth-child(4) h3::before {
+    content: url('../images/menu-icon.png');
+    margin-right: 10px;
+}
+.cards-item:nth-child(5) h3::before {
+    content: url('../images/dumbell-icon.png');
+    margin-right: 10px;
+}
+.cards-item:nth-child(6) h3::before {
+    content: url('../images/bag-icon.png');
+    margin-right: 10px;
 }
