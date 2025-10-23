@@ -10,6 +10,7 @@
     --darkgreen15: #1A3129;
     --darkgreen20: #234338;
     --darkgreen25: #2C5446;
+    --darkgreen30: #346454;
     --darkgreen40: #468671;
     --green70: #CBEA7B;
     --green85: #E5F5BD;
@@ -408,4 +409,74 @@ h2 {
     justify-content: flex-end;
     gap: 8px;
     padding-top: 20px;
+}
+/* Testimonials Section starts here */
+.testimonials {
+    border: 1px solid var(--green90);
+    padding: 24px 24px;
+    font-size: .95rem;
+    line-height: 1.5;
+    color: var(--gray20);
+    border-radius: 10px;
+    margin: 0 16px;
+}
+.paraTestimonial {
+    text-align: center;
+    margin: 0 16px 50px 16px;
+    line-height: 1.5;
+    font-size: .875rem;
+    color: var(--gray20);
+}
+.quote p {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.quote::before {
+    content: url(../images/quotation-icon.svg);
+}
+.customer {
+    background-color: var(--green95);
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+}
+.customer h4 {
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: var(--darkgreen15);
+}
+.arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px
+}
+.arrow-right, .arrow-left {
+    background-color: var(--green95);
+    border: 1px solid var(--green90);
+    border-radius: 6px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.circle-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 20px;
+}
+.circle {
+    display: inline-flex;
+    width: 7px;
+    height: 7px;
+    background-color: var(--green85);
+    border-radius: 50%;
+}
+.circle-first {
+    display: inline-flex;
+    width: 7px;
+    height: 7px;
+    background-color: var(--darkgreen30);
+    border-radius: 50%;
 }
