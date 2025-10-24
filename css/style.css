@@ -13,6 +13,7 @@
     --darkgreen30: #346454;
     --darkgreen40: #468671;
     --green70: #CBEA7B;
+    --green80: #DCF1A7;
     --green85: #E5F5BD;
     --green90: #EEF8D3;
     --green95: #F6FBE9;
@@ -21,6 +22,7 @@
     --gray20: #333333;
     --gray30: #4C4C4D;
     --gray35: #59595A;
+    --absolutewhite: #FFF;
 }
 
 body {
@@ -418,14 +420,7 @@ h2 {
     line-height: 1.5;
     color: var(--gray20);
     border-radius: 10px;
-    margin: 0 16px;
-}
-.paraTestimonial {
-    text-align: center;
-    margin: 0 16px 50px 16px;
-    line-height: 1.5;
-    font-size: .875rem;
-    color: var(--gray20);
+    margin: 50px 16px 0 16px;
 }
 .quote p {
     padding-top: 40px;
@@ -479,4 +474,82 @@ h2 {
     height: 7px;
     background-color: var(--darkgreen30);
     border-radius: 50%;
+}
+/* Pricing section starts here */
+.price-slider {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    justify-content: center;
+    border: 1px solid var(--green80);
+    border-radius: 8px;
+    padding: 10px 10px;
+    justify-self: center;
+}
+.monthly, .yearly {
+    text-decoration: none;
+}
+.monthly {
+    color: var(--absolutewhite);
+    background-color: var(--darkgreen20);
+    border-radius: 6px;
+    padding: 10px 24px;
+}
+.yearly {
+   color: var(--gray30); 
+   background-color: var(--green97);
+   padding: 10px 24px;
+}
+.slider-text {
+    display: flex;
+    justify-self: center;
+    color: var(--gray30);
+    line-height: 1.5;
+}
+.pricing-card {
+    background-color: var(--green95);
+    border: 1px solid var(--green90);
+    border-radius: 10px;
+    margin: 30px 16px 0 16px;
+    gap: 20px;
+    padding: 30px 30px;
+}
+.pricing-card h3 {
+    font-size: 1.7rem;
+    color: var(--gray15);
+    font-weight: 500;
+    line-height: 1.5;
+}
+.pricing-card h4 {
+    font-size: 1.1rem;
+    color: var(--gray30);
+    font-weight: 400;
+    line-height: 1.5;
+}
+.pricing-card p {
+    font-size: .95rem;
+    color: var(--gray15);
+    line-height: 1.5;
+    padding: 24px 0 24px 0;
+    font-weight: 500;
+}
+.number {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--darkgreen25);
+}
+.price p {
+    color: var(--gray20);
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+.plan-CTA {
+    background-color: var(--green70);
+    padding: 14px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--gray15);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
 }
