@@ -26,6 +26,8 @@
     --absolutewhite: #FFF;
     --paragraph-desktop: 1rem;
     --paragraph-mobile: .875rem;
+    --h2-desktop: 2.3rem;
+    --h3-desktop: 1.25rem;
 }
 
 body {
@@ -866,6 +868,9 @@ h2 {
     .reviews, .review-images {
         display: none;
     }
+    .hero-text-wrapper p {
+        margin: 0;
+    }
     #reviews-desktop,
     #review-images-desktop {
         display: block;
@@ -892,6 +897,21 @@ h2 {
    display: flex;
    align-items: center;
 }
-/* feauture section starts here */
 
+/* feauture section starts here */
+h2 {
+    font-size: var(--h2-desktop);
+}
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.cards-item h3 {
+    font-size: var(--h3-desktop);
+}
+.cards-item p {
+    font-size: 1rem;
+}
 }
