@@ -24,12 +24,15 @@
         <nav>
             <!-- Logo -->
             <picture class="logoImg">
-                <!-- for mobile -->
-                <source media="(max-width: 430px)" srcset="./images/logoMobile.png">
-                <!-- for laptop -->
-                <source media="(max-width: 1023px)" srcset="./images/logoLaptop.png">
                 <!-- for desktop -->
-                <source media="(min-width: 1024px)" srcset="./images/logoDesktop.png">
+                <source media="(min-width: 1441px)" srcset="./images/logoDesktop.png">
+
+                <!-- for laptop -->
+                <source media="(min-width: 431px) and (max-width: 1440px)" srcset="./images/logoLaptop.png">
+
+                <!-- for mobile-->
+                <source media="(max-width: 430px)" srcset="./images/logoMobile.png">
+
                 <!-- fallback -->
                 <img src="./images/logoDesktop.png" alt="logo">
             </picture>
@@ -51,7 +54,7 @@
                 </svg>
             </label>
 
-            <!-- Menu -->
+            <!-- menu mobile -->
             <ul class="main_nav">
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
@@ -61,21 +64,38 @@
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact Us</a></li>
             </ul>
+            <!-- for laptop and desktop menu -->
+            <ul id="desktop-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Process</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Blog</a></li>
+                <div id="contact">
+                    <li><a href="">Contact Us</a></li>
+                </div>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section id="hero-wrapper">
             <div class="wrapper">
                 <picture>
+                    <!-- for desktop -->
+                    <source media="(min-width: 1441px)" srcset="./images/nutriDesktop.png">
+
+                    <!-- for laptop -->
+                    <source media="(min-width: 431px) and (max-width: 1440px)" srcset="./images/nutriLaptop.png">
+
                     <!-- for mobile -->
                     <source media="(max-width: 430px)" srcset="./images/nutriMobile.png">
-                    <!-- for laptop -->
-                    <source media="(max-width: 1023px)" srcset="./images/nutriLaptop.png">
-                    <!-- for desktop -->
-                    <source media="(min-width: 1024px)" srcset="./images/nutriDesktop.png">
+
+
                     <!-- fallback -->
                     <img class="nutriImg" src="./images/nutriDesktop.png" alt="nutritionist image">
+
                 </picture>
                 <div class="review-images-wrapper">
                     <div class="review-images">
@@ -92,21 +112,38 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <h1 class="primaryTitle">
-                    <!-- span's were created so I could stylize on CSS without having multiples h1 -> accessibility issues -->
-                    <span class="underlinedText">Transform Your <span class="emoji">Health</span> with</span>
-                    <span class="largeText">Personalized Nutrition Coaching</span>
-                </h1>
-            </div>
-            <p class="regularP">Welcome to Nutritionist, your partner in achieving optimal health through personalized
-                nutrition
-                coaching. Our certified nutritionists are here to guide you on your weight loss journey, providing
-                customized plans and ongoing support. Start your transformation today and experience the power of
-                personalized nutrition coaching.</p>
-            <div class="buttonCTA">
-                <a class="starterCTA" href="">Get Starter Today</a>
-                <a class="demoCTA" href="">Book a Demo</a>
+            <div class="hero-text-wrapper">
+                <div>
+                    <h1 class="primaryTitle">
+                        <!-- span's were created so I could stylize on CSS without having multiples h1 -> accessibility issues -->
+                        <span class="underlinedText">Transform Your <span class="emoji">Health</span> with</span>
+                        <span class="largeText">Personalized Nutrition Coaching</span>
+                    </h1>
+                </div>
+                <p class="regularP">Welcome to Nutritionist, your partner in achieving optimal health through
+                    personalized
+                    nutrition
+                    coaching. Our certified nutritionists are here to guide you on your weight loss journey, providing
+                    customized plans and ongoing support. Start your transformation today and experience the power of
+                    personalized nutrition coaching.</p>
+                <div class="buttonCTA">
+                    <a class="starterCTA" href="">Get Starter Today</a>
+                    <a class="demoCTA" href="">Book a Demo</a>
+                </div>
+                <div class="reviews-desktop-wrapper">
+                    <div id="review-images-desktop">
+                        <img src="./images/review_img3.png" alt="testimonial person wearing pink blouse">
+
+                        <img src="./images/review_img2.png" alt="testimonial person wearaing light green blouse">
+
+                        <img src="./images/review_img1.png" alt="testimonial person wearing dark green blouse">
+                    </div>
+                    <div id="reviews-desktop">
+                        <p>
+                            <span class="numberStyle">430+</span>Happy Costumers
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
         <section>
@@ -174,14 +211,18 @@
                 <!-- 1 banner starts here -->
                 <div class="banner-item">
                     <picture class="banner-img">
+                        <!-- for desktop -->
+                        <source media="(min-width: 1441px)" srcset="./images/blog-img1desktop.png">
+
+                        <!-- for laptop -->
+                        <source media="(min-width: 431px) and (max-width: 1440px)"
+                            srcset="./images/blog-img1laptop.png">
+
                         <!-- for mobile -->
                         <source media="(max-width: 430px)" srcset="./images/blog-img1mobile.png">
-                        <!-- for laptop -->
-                        <source media="(max-width: 1023px)" srcset="./images/blog-img1laptop.png">
-                        <!-- for desktop -->
-                        <source media="(min-width: 1024px)" srcset="./images/blog-img1desktop.png">
+
                         <!-- fallback -->
-                        <img src="./images/blog-img1desktop.png" alt="woman drinking water">
+                        <img class="image" src="./images/blog-img1desktop.png" alt="woman drinking water">
                     </picture>
                     <h3>
                         <span class="category">Weight Loss</span>
@@ -192,12 +233,16 @@
                     <div class="banner-creator-container">
                         <div class="banner-creator">
                             <picture>
+                                <!-- for desktop -->
+                                <source media="(min-width: 1441px)" srcset="./images/emilyJohnson-desktop.png">
+
+                                <!-- for laptop -->
+                                <source media="(min-width: 431px) and (max-width: 1440px)"
+                                    srcset="./images/emilyJohnson-laptop.png">
+
                                 <!-- for mobile -->
                                 <source media="(max-width: 430px)" srcset="./images/emilyJohnson-mobile.png">
-                                <!-- for laptop -->
-                                <source media="(max-width: 1023px)" srcset="./images/emilyJohnson-laptop.png">
-                                <!-- for desktop -->
-                                <source media="(min-width: 1024px)" srcset="./images/emilyJohnson-desktop.png">
+
                                 <!-- fallback -->
                                 <img src="./images/emilyJohnson-desktop.png" alt="women wearing pink blouse">
                             </picture>
@@ -228,14 +273,19 @@
                 <!-- 2 banner starts here -->
                 <div class="banner-item">
                     <picture class="banner-img">
+                        <!-- for desktop -->
+                        <source media="(min-width: 1441px)" srcset="./images/blog-img2desktop.png">
+
+
+                        <!-- for laptop -->
+                        <source media="(min-width: 431px) and (max-width: 1440px)"
+                            srcset="./images/blog-img2laptop.png">
+
                         <!-- for mobile -->
                         <source media="(max-width: 430px)" srcset="./images/blog-img2mobile.png">
-                        <!-- for laptop -->
-                        <source media="(max-width: 1023px)" srcset="./images/blog-img2laptop.png">
-                        <!-- for desktop -->
-                        <source media="(min-width: 1024px)" srcset="./images/blog-img2desktop.png">
+
                         <!-- fallback -->
-                        <img src="./images/blog-img2desktop.png"
+                        <img class="image" src="./images/blog-img2desktop.png"
                             alt="two women deciding on food on a pink and green background">
                     </picture>
                     <h3>
@@ -248,12 +298,16 @@
                     <div class="banner-creator-container">
                         <div class="banner-creator">
                             <picture>
+                                <!-- for desktop -->
+                                <source media="(min-width: 1441px)" srcset="./images/markWilson-desktop.png">
+
+                                <!-- for laptop -->
+                                <source media="(min-width: 431px) and (max-width: 1440px)"
+                                    srcset="./images/markWilson-laptop.png">
+
                                 <!-- for mobile -->
                                 <source media="(max-width: 430px)" srcset="./images/markWilson-mobile.png">
-                                <!-- for laptop -->
-                                <source media="(max-width: 1023px)" srcset="./images/markWilson-laptop.png">
-                                <!-- for desktop -->
-                                <source media="(min-width: 1024px)" srcset="./images/markWilson-desktop.png">
+
                                 <!-- fallback -->
                                 <img src="./images/markWilson-desktop.png" alt="man wearing t shirt at a restaurant">
                             </picture>
@@ -284,14 +338,18 @@
                 <!-- 3 banner starts here -->
                 <div class="banner-item">
                     <picture class="banner-img">
+                        <!-- for desktop -->
+                        <source media="(min-width: 1441px)" srcset="./images/blog-img3desktop.png">
+
+                        <!-- for laptop -->
+                        <source media="(min-width: 431px) and (max-width: 1440px)"
+                            srcset="./images/blog-img3laptop.png">
+
                         <!-- for mobile -->
                         <source media="(max-width: 430px)" srcset="./images/blog-img3mobile.png">
-                        <!-- for laptop -->
-                        <source media="(max-width: 1023px)" srcset="./images/blog-img3laptop.png">
-                        <!-- for desktop -->
-                        <source media="(min-width: 1024px)" srcset="./images/blog-img3desktop.png">
+
                         <!-- fallback -->
-                        <img src="./images/blog-img3desktop.png"
+                        <img class="image" src="./images/blog-img3desktop.png"
                             alt="two women deciding on food on a pink and green background">
                     </picture>
                     <h3>
@@ -304,12 +362,16 @@
                     <div class="banner-creator-container">
                         <div class="banner-creator">
                             <picture>
+                                <!-- for desktop -->
+                                <source media="(min-width: 1441px)" srcset="./images/sarahThompson-desktop.png">
+
+                                <!-- for laptop -->
+                                <source media="(min-width: 431px) and (max-width: 1440px)"
+                                    srcset="./images/sarahThompson-laptop.png">
+
                                 <!-- for mobile -->
                                 <source media="(max-width: 430px)" srcset="./images/sarahThompson-mobile.png">
-                                <!-- for laptop -->
-                                <source media="(max-width: 1023px)" srcset="./images/sarahThompson-laptop.png">
-                                <!-- for desktop -->
-                                <source media="(min-width: 1024px)" srcset="./images/sarahThompson-desktop.png">
+
                                 <!-- fallback -->
                                 <img src="./images/sarahThompson-desktop.png"
                                     alt="woman looking indecise between two food options">
@@ -341,14 +403,18 @@
                 <!-- 4 banner starts here -->
                 <div class="banner-item">
                     <picture class="banner-img">
+                        <!-- for desktop -->
+                        <source media="(min-width: 1441px)" srcset="./images/blog-img4desktop.png">
+
+                        <!-- for laptop -->
+                        <source media="(min-width: 431px) and (max-width: 1440px)"
+                            srcset="./images/blog-img4laptop.png">
+
                         <!-- for mobile -->
                         <source media="(max-width: 430px)" srcset="./images/blog-img4mobile.png">
-                        <!-- for laptop -->
-                        <source media="(max-width: 1023px)" srcset="./images/blog-img4laptop.png">
-                        <!-- for desktop -->
-                        <source media="(min-width: 1024px)" srcset="./images/blog-img4desktop.png">
+
                         <!-- fallback -->
-                        <img src="./images/blog-img4desktop.png" alt="two options of meal">
+                        <img class="image" src="./images/blog-img4desktop.png" alt="two options of meal">
                     </picture>
                     <h3>
                         <span class="category">Healthy Snacks on the Go</span>
@@ -360,12 +426,16 @@
                     <div class="banner-creator-container">
                         <div class="banner-creator">
                             <picture>
-                                <!-- for mobile -->
-                                <source media="(max-width: 430px)" srcset="./images/emilyJohnson2-mobile.png">
-                                <!-- for laptop -->
-                                <source media="(max-width: 1023px)" srcset="./images/emilyJohnson2-laptop.png">
                                 <!-- for desktop -->
                                 <source media="(min-width: 1024px)" srcset="./images/emilyJohnson2-desktop.png">
+
+                                <!-- for laptop -->
+                                <source media="(min-width: 431px) and (max-width: 1023px)"
+                                    srcset="./images/emilyJohnson2-laptop.png">
+
+                                <!-- for mobile -->
+                                <source media="(max-width: 430px)" srcset="./images/emilyJohnson2-mobile.png">
+
                                 <!-- fallback -->
                                 <img src="./images/emilyJohnson2-desktop.png"
                                     alt="woman looking indecise between two food options">
@@ -409,12 +479,16 @@
                 </div>
                 <div class="customer">
                     <picture>
+                        <!-- for desktop -->
+                        <source media="(min-width: 1441px)" srcset="./images/jennifer-desktop.png">
+
+                        <!-- for laptop -->
+                        <source media="(min-width: 431px) and (max-width: 1440px)"
+                            srcset="./images/jennifer-laptop.png">
+
                         <!-- for mobile -->
                         <source media="(max-width: 430px)" srcset="./images/jennifer-mobile.png">
-                        <!-- for laptop -->
-                        <source media="(max-width: 1023px)" srcset="./images/jennifer-laptop.png">
-                        <!-- for desktop -->
-                        <source media="(min-width: 1024px)" srcset="./images/jennifer-desktop.png">
+
                         <!-- fallback -->
                         <img src="./images/jennifer--desktop.png" alt="woman smilling">
                     </picture>
@@ -510,12 +584,15 @@
             <div class="nav-container">
                 <!-- logo on footer -->
                 <picture class="logoImg">
+                    <!-- for desktop -->
+                    <source media="(min-width: 1441px)" srcset="./images/logoDesktop.png">
+
+                    <!-- for laptop -->
+                    <source media="(min-width: 431px) and (max-width: 1440px)" srcset="./images/logoLaptop.png">
+
                     <!-- for mobile -->
                     <source media="(max-width: 430px)" srcset="./images/logoMobile.png">
-                    <!-- for laptop -->
-                    <source media="(max-width: 1023px)" srcset="./images/logoLaptop.png">
-                    <!-- for desktop -->
-                    <source media="(min-width: 1024px)" srcset="./images/logoDesktop.png">
+
                     <!-- fallback -->
                     <img src="./images/logoDesktop.png" alt="logo">
                 </picture>
@@ -554,7 +631,7 @@
                 <div class="copyright">
                     &copy;2023 Nutritionist. All rights reserved
                 </div>
-                
+
             </div>
         </footer>
     </main>
