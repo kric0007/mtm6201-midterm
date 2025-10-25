@@ -1031,4 +1031,19 @@ h2 {
     }
 
     /* pricing section starts here */
+    .pricing-container {
+        display: flex;
+        gap: 20px;
+    }
+    .pricing-card {
+       margin: 0; 
+    }
+   .slider-text {
+    margin-bottom: 40px;
+   }
+   #pricing-section {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 100px;
+   }
 }
