@@ -146,9 +146,10 @@
                 </div>
             </div>
         </section>
-        <section id="features">
+        <section id="features-section">
             <h2>Features</h2>
-            <p class="description">Welcome to the Feature Section of Nutritionist, your ultimate destination for all things
+            <p class="description">Welcome to the Feature Section of Nutritionist, your ultimate destination for all
+                things
                 nutrition and wellness.</p>
             <div class="cards-wrapper">
                 <div class="cards-item">
@@ -201,7 +202,7 @@
                 </div>
             </div>
         </section>
-        <section id="blog">
+        <section id="blog-section">
             <h2>Our Blogs</h2>
             <p class="description">
                 Our blog is a treasure trove of informative and engaging articles written by our team of nutritionists,
@@ -466,61 +467,112 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="testimonial-section">
             <h2>Our Testimonials</h2>
             <p class="description">Our satisfied clients share their success stories and experiences on their journey to
                 better health and well-being.</p>
-            <div class="testimonials">
-                <div class="quote">
-                    <p>
-                        I can't thank Nutritionist enough for their personalized nutrition coaching. It has completely
-                        transformed my approach to food and helped me shed those extra pounds. Highly recommended!
-                    </p>
-                </div>
-                <div class="customer">
-                    <picture>
-                        <!-- for desktop -->
-                        <source media="(min-width: 1441px)" srcset="./images/jennifer-desktop.png">
-
-                        <!-- for laptop -->
-                        <source media="(min-width: 431px) and (max-width: 1440px)"
-                            srcset="./images/jennifer-laptop.png">
-
-                        <!-- for mobile -->
-                        <source media="(max-width: 430px)" srcset="./images/jennifer-mobile.png">
-
-                        <!-- fallback -->
-                        <img src="./images/jennifer--desktop.png" alt="woman smilling">
-                    </picture>
-                    <h4>Jennifer Anderson</h4>
-                </div>
-                <!-- for the arrows -->
-                <div class="arrow-wrapper">
-                    <a aria-label="Click here to go to the next review" class="arrow-right" href=""><svg width="28"
-                            height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.5 7L10.5 14L17.5 21" stroke="#333333" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg></a>
-                    <!-- for the circles -->
-                    <div class="circle-group">
-                        <span class="circle-first"></span>
-                        <span class="circle"></span>
-                        <span class="circle"></span>
-                        <span class="circle"></span>
-                        <span class="circle"></span>
+            <div class="testimonial-wrapper">
+                <div class="testimonials">
+                    <div class="quote">
+                        <p>
+                            I can't thank Nutritionist enough for their personalized nutrition coaching. It has
+                            completely
+                            transformed my approach to food and helped me shed those extra pounds. Highly recommended!
+                        </p>
                     </div>
+                    <div class="customer">
+                        <picture>
+                            <!-- for desktop -->
+                            <source media="(min-width: 1441px)" srcset="./images/jennifer-desktop.png">
 
-                    <a aria-label="Click here to go to the previous review" class="arrow-left" href=""><svg width="28"
-                            height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.5 7L17.5 14L10.5 21" stroke="#333333" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
+                            <!-- for laptop -->
+                            <source media="(min-width: 431px) and (max-width: 1440px)"
+                                srcset="./images/jennifer-laptop.png">
+
+                            <!-- for mobile -->
+                            <source media="(max-width: 430px)" srcset="./images/jennifer-mobile.png">
+
+                            <!-- fallback -->
+                            <img src="./images/jennifer-desktop.png" alt="woman smilling">
+                        </picture>
+                        <h4>Jennifer Anderson</h4>
+                    </div>
+                </div> <!-- testimonial ends-->
+                <!-- only for laptop and desktop will the following cards display -->
+
+                <div class="testimonials desktop">
+                    <div class="quote">
+                        <p>
+                            Nutritionist has been a game-changer for me. The expert guidance and support I received from
+                            their team made my weight loss journey so much easier. Thank you!
+                        </p>
+                    </div>
+                    <div class="customer">
+                        <picture>
+                            <!-- for desktop -->
+                            <source media="(min-width: 1441px)" srcset="./images/robert-desktop.png">
+
+                            <!-- for laptop -->
+                            <source media="(min-width: 431px) and (max-width: 1440px)"
+                                srcset="./images/robert-laptop.png">
+
+                            <!-- fallback -->
+                            <img src="./images/robert-desktop.png" alt="man smilling">
+                        </picture>
+                        <h4>Robert Johnson</h4>
+                    </div>
+                </div><!--2nd card of testimonial ends here-->
+                <div class="testimonials desktop">
+                    <div class="quote">
+                        <p>
+                            I had struggled with my weight for years until I found Nutritionist. Their personalized
+                            approach
+                            and tailored nutrition plan made all the difference. I've never felt better!
+                        </p>
+                    </div>
+                    <div class="customer">
+                        <picture>
+                            <!-- for desktop -->
+                            <source media="(min-width: 1441px)" srcset="./images/emily-desktop.png">
+
+                            <!-- for laptop -->
+                            <source media="(min-width: 431px) and (max-width: 1440px)"
+                                srcset="./images/emily-laptop.png">
+
+                            <!-- fallback -->
+                            <img src="./images/emily-desktop.png" alt="woman smilling">
+                        </picture>
+                        <h4>Emily Davis</h4>
+                    </div>
+                </div> <!--3rd card of testimonials ends here-->
             </div>
+            <!-- for the arrows -->
+            <div class="arrow-wrapper">
+                <a aria-label="Click here to go to the next review" class="arrow-right" href=""><svg width="28"
+                        height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5 7L10.5 14L17.5 21" stroke="#333333" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></a>
+                <!-- for the circles -->
+                <div class="circle-group">
+                    <span class="circle-first"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                </div>
+
+                <a aria-label="Click here to go to the previous review" class="arrow-left" href=""><svg width="28"
+                        height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 7L17.5 14L10.5 21" stroke="#333333" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+
         </section>
         <!-- Pricing section starts here -->
-        <section>
+        <section id="pricing-section">
             <h2>Our Pricing</h2>
             <p class="description">
                 We outline our flexible and affordable options to support you on your journey to optimal health and
