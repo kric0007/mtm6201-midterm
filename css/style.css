@@ -284,6 +284,14 @@ nav ul {
     color: var(--grey20);
 }
 
+.description {
+    text-align: center;
+    margin: 0 16px;
+    line-height: 1.5;
+    font-size: var(--paragraph-mobile);
+    color: var(--grey20);
+}
+
 .buttonCTA {
     margin-top: 30px;
     display: flex;
@@ -423,7 +431,7 @@ h2 {
 .banner-item p {
     color: var(--grey30);
     line-height: 1.5;
-    font-size: .9rem;
+    font-size: 1rem;
     padding: 18px 0;
 }
 
@@ -848,6 +856,7 @@ h2 {
         margin: 0;
         text-align: left;
         font-size: 2.68rem;
+        padding-bottom: 10px;
     }
 
     .regularP {
@@ -859,12 +868,7 @@ h2 {
         margin-top: 40px;
         margin-bottom: 50px;
     }
-    .starterCTA:hover {
-        background-color: var(--green85);
-    }
-    .demoCTA:hover {
-        color: var(--green70);
-    }
+    
     .reviews, .review-images {
         display: none;
     }
@@ -899,19 +903,60 @@ h2 {
 }
 
 /* feauture section starts here */
+#features {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.description {
+    font-size: var(--paragraph-desktop);
+}
 h2 {
     font-size: var(--h2-desktop);
 }
 .cards-wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin-left: 80px;
-    margin-right: 80px;
 }
 .cards-item h3 {
     font-size: var(--h3-desktop);
 }
 .cards-item p {
     font-size: 1rem;
+}
+/* blog section starts here */
+#blog {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.description {
+    width: 70%;
+    margin: 5px auto;
+}
+.banner-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.banner-item:nth-child(2) {
+    order: 2;
+}
+.banner-item:nth-child(3) {
+    order: 1;
+}
+.banner-item:nth-child(4) {
+    order: 3;
+}
+.banner-item h3 {
+    font-size: 1.37rem;
+}
+.banner-creator-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-creator-text p {
+    margin-top: 5px;
+}
+.banner-icons {
+    padding-top: 0;
 }
 }
