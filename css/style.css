@@ -39,7 +39,6 @@ body {
     background-color: var(--darkgreen15);
     border-bottom: 1px solid var(--darkgreen20);
     position: relative;
-    height: 94px;
     padding: 40px 16px 14px 16px;
     overflow: hidden;
 }
@@ -52,10 +51,15 @@ body {
     z-index: 1;
 }
 
+.backImg.desktop,
+.backImg2.desktop {
+    display: none;
+}
+
 .backImg {
     position: absolute;
     bottom: -28%;
-    left: -21%;
+    left: -20%;
     height: 74px;
     width: 143px;
 }
@@ -78,17 +82,20 @@ body {
     border-radius: 6px;
     font-size: 0.75rem;
     width: 100%;
+    text-align: center;
+}
+
+.cta_Join a span {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.cta_Join a::before {
+.cta_Join a span::before {
     content: url('../images/cricket.ball.fill.png');
-    padding-top: 1%;
 }
 
-.cta_Join a::after {
+.cta_Join a span::after {
     content: url('../images/arrowRight.png');
 }
 
@@ -395,6 +402,7 @@ h2 {
     content: url('../images/bag-icon.png');
     margin-right: 10px;
 }
+
 #features-section {
     margin-bottom: 50px;
 }
@@ -487,6 +495,7 @@ h2 {
     gap: 8px;
     padding-top: 20px;
 }
+
 #blog-section {
     margin-bottom: 50px;
 }
@@ -500,6 +509,7 @@ h2 {
     border-radius: 10px;
     margin: 50px 16px 0 16px;
 }
+
 .quote {
     padding: 24px;
 }
@@ -659,9 +669,11 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
 #pricing-section {
     margin-bottom: 50px;
 }
+
 /* Footer starts here */
 .footer-container {
     background-color: var(--darkgreen15);
@@ -767,6 +779,47 @@ h2 {
 
 /* here starts breakpoint for laptop */
 @media (min-width: 970px) and (max-width: 1440px) {
+    .headerBanner {
+        padding: 14px 80px;
+    }
+    .cta_Join {
+        overflow: hidden;
+    }
+
+    .cta_Join a span {
+        justify-content: center;
+    }
+
+    .cta_Join a span::before {
+        margin-right: 1rem;
+    }
+
+    .cta_Join a span::after {
+        margin-left: 1rem;
+    }
+
+    .backImg,
+    .backImg2 {
+        display: none;
+    }
+
+    .backImg.desktop,
+    .backImg2.desktop {
+        display: block;
+    }
+
+    .backImg {
+        bottom: -14px;
+        left: 31px;
+        height: 67px;
+        width: 130px;
+    }
+    .backImg2 {
+        bottom: -26px;
+        right: 42px;
+        height: 79px;
+        width: 130px;
+    }
 
     .menu-icon,
     .menu-toggle {
@@ -839,7 +892,7 @@ h2 {
         font-weight: 600;
         line-height: 1.5;
     }
-  
+
     /* here starts hero section */
     .wrapper,
     .hero-text-wrapper {
@@ -1009,23 +1062,30 @@ h2 {
         padding-top: 0;
     }
 
+    /* animation for icons */
+
+
     /* testimonial section starts here */
     #testimonial-section {
         margin-right: 80px;
         margin-left: 80px;
         margin-bottom: 100px;
     }
+
     .testimonial-wrapper {
         display: flex;
         margin-top: 60px;
         gap: 20px;
     }
+
     .testimonials {
         margin: 0;
     }
+
     .testimonials.desktop {
         display: block;
     }
+
     .arrow-wrapper {
         margin-top: 40px;
     }
@@ -1035,15 +1095,46 @@ h2 {
         display: flex;
         gap: 20px;
     }
+
     .pricing-card {
-       margin: 0; 
+        margin: 0;
     }
-   .slider-text {
-    margin-bottom: 40px;
-   }
-   #pricing-section {
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 100px;
-   }
+
+    .slider-text {
+        margin-bottom: 40px;
+    }
+
+    #pricing-section {
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 100px;
+    }
+
+    /* footer starts here */
+    .footer-container {
+        padding: 40px 80px;
+    }
+
+    .footer-nav {
+        margin-top: 0;
+    }
+
+    .go-top-CTA {
+        order: 1;
+    }
+
+    .nav-container {
+        display: flex;
+    }
+
+    .footer-card {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .links {
+        display: flex;
+        gap: 16px;
+    }
 }
