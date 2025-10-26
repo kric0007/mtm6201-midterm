@@ -24,10 +24,19 @@
     --grey35: #59595A;
     --grey95: #F2F2F2;
     --absolutewhite: #FFF;
-    --paragraph-desktop: 1rem;
+    --paragraph-desktop: 1.125rem;
+    --paragraph-laptop: 1rem;
     --paragraph-mobile: .875rem;
-    --h2-desktop: 2.3rem;
-    --h3-desktop: 1.25rem;
+    --h1-mobile: 2.4rem;
+    --h2-mobile: 1.75rem;
+    --h2-desktop: 3rem;
+    --h3-desktop: 1.5rem;
+    --h3-mobile: 1.1rem;
+    --h2-laptop: 2.3rem;
+    --h3-laptop: 1.25rem;
+    --h4-mobile: 1rem;
+    --h4-laptop: 1.15rem;
+    --h4-desktop: 1.35rem;
 }
 
 body {
@@ -80,7 +89,7 @@ body {
     background-color: var(--darkgreen20);
     padding: 7px 20px;
     border-radius: 6px;
-    font-size: 0.75rem;
+    font-size: var(--paragraph-mobile);
     width: 100%;
     text-align: center;
 }
@@ -241,7 +250,7 @@ nav ul {
 }
 
 .reviews p {
-    font-size: .85rem;
+    font-size: .95rem;
     font-weight: 500;
     margin-top: 4px;
     color: var(--darkgreen20);
@@ -276,7 +285,7 @@ nav ul {
 }
 
 .largeText {
-    font-size: 2.4rem;
+    font-size: var(--h1-mobile);
     margin: 16px 16px;
     font-weight: 600;
     text-align: center;
@@ -339,7 +348,7 @@ h2 {
     text-align: center;
     line-height: 1.5;
     color: var(--grey15);
-    font-size: 2.1rem;
+    font-size: var(--h2-mobile);
     font-weight: 600;
 }
 
@@ -362,7 +371,7 @@ h2 {
     font-weight: 600;
     line-height: 1.5;
     padding-bottom: 16px;
-    font-size: 1.2rem;
+    font-size: var(--h3-mobile);
     display: flex;
     align-items: center;
 }
@@ -370,7 +379,7 @@ h2 {
 .cards-item p {
     color: var(--grey20);
     line-height: 1.5;
-    font-size: .9rem;
+    font-size: var(--paragraph-mobile);
 }
 
 .cards-item:nth-child(1) h3::before {
@@ -431,7 +440,7 @@ h2 {
 }
 
 .category {
-    font-size: .9rem;
+    font-size: var(--paragraph-mobile);
     font-weight: 300;
     padding-top: 20px;
     display: flex;
@@ -449,7 +458,7 @@ h2 {
 .banner-item p {
     color: var(--grey30);
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: var(--paragraph-mobile);
     padding: 18px 0;
 }
 
@@ -471,13 +480,13 @@ h2 {
 .banner-creator-text h4 {
     color: var(--darkgreen15);
     font-weight: 600;
-    font-size: 1.05rem;
+    font-size:var(--h4-mobile);
 }
 
 .banner-creator-text p {
     color: var(--grey35);
     padding: 0;
-    font-size: .95rem;
+    font-size: var(--paragraph-mobile);
 }
 
 .icon-button {
@@ -503,7 +512,7 @@ h2 {
 /* Testimonials Section starts here */
 .testimonials {
     border: 1px solid var(--green90);
-    font-size: .95rem;
+    font-size: var(--paragraph-mobile);
     line-height: 1.5;
     color: var(--grey20);
     border-radius: 10px;
@@ -532,7 +541,7 @@ h2 {
 .customer h4 {
     padding-left: 10px;
     font-weight: 500;
-    font-size: 1.05rem;
+    font-size: var(--h4-mobile);
     color: var(--darkgreen15);
 }
 
@@ -594,6 +603,7 @@ h2 {
 .monthly,
 .yearly {
     text-decoration: none;
+    font-size: var(--paragraph-mobile);
 }
 
 .monthly {
@@ -614,6 +624,7 @@ h2 {
     justify-self: center;
     color: var(--gray30);
     line-height: 1.5;
+    font-size: 1rem;
 }
 
 .pricing-card {
@@ -626,21 +637,21 @@ h2 {
 }
 
 .pricing-card h3 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: var(--grey15);
     font-weight: 500;
     line-height: 1.5;
 }
 
 .pricing-card h4 {
-    font-size: 1.1rem;
+    font-size: var(--paragraph-mobile);
     color: var(--grey30);
     font-weight: 400;
     line-height: 1.5;
 }
 
 .pricing-card p {
-    font-size: .9rem;
+    font-size: var(--paragraph-mobile);
     color: var(--grey15);
     line-height: 1.5;
     padding: 24px 0 24px 0;
@@ -648,7 +659,7 @@ h2 {
 }
 
 .number {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: var(--darkgreen25);
 }
@@ -656,7 +667,7 @@ h2 {
 .price p {
     color: var(--grey20);
     line-height: 1.5;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .plan-CTA {
@@ -664,6 +675,7 @@ h2 {
     padding: 14px 24px;
     border-radius: 6px;
     text-decoration: none;
+    font-size: var(--paragraph-mobile);
     color: var(--grey15);
     font-weight: 600;
     display: flex;
@@ -691,7 +703,7 @@ h2 {
 .go-top-CTA a {
     text-decoration: none;
     color: var(--absolutewhite);
-    font-size: 1.1rem;
+    font-size: 1rem;
     display: inline-flex;
     align-items: center;
 }
@@ -710,6 +722,7 @@ h2 {
     text-decoration: none;
     color: var(--absolutewhite);
     line-height: 1.5;
+    font-size: var(--paragraph-mobile);
 }
 
 .footer-nav ul {
@@ -717,6 +730,7 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1.5rem;
+    padding-right: 66px;
 }
 
 .footer-nav {
@@ -729,6 +743,11 @@ h2 {
     border-radius: 8px;
     padding: 20px 20px;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.links {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -775,15 +794,19 @@ h2 {
     color: var(--grey95);
     line-height: 1.5;
     font-weight: 200;
+    font-size: var(--paragraph-mobile);
 }
 
 /* here starts breakpoint for laptop */
-@media (min-width: 970px) and (max-width: 1440px) {
+@media (min-width: 970px) {
     .headerBanner {
         padding: 14px 80px;
     }
     .cta_Join {
         overflow: hidden;
+    }
+    .cta_Join a {
+        font-size: 1rem;
     }
 
     .cta_Join a span {
@@ -843,6 +866,7 @@ h2 {
         line-height: 1.5;
         font-weight: 500;
         position: relative;
+        font-size: var(--paragraph-mobile);
     }
 
     /* animation when hovering */
@@ -924,7 +948,7 @@ h2 {
 
     .underlinedText {
         margin-bottom: 15px;
-        font-size: 1.1rem;
+        font-size: 1.35rem;
     }
 
     .primaryTitle {
@@ -934,18 +958,21 @@ h2 {
     .largeText {
         margin: 0;
         text-align: left;
-        font-size: 2.68rem;
+        font-size: 3rem;
         padding-bottom: 10px;
     }
 
     .regularP {
-        font-size: var(--paragraph-desktop);
+        font-size: var(--paragraph-laptop);
     }
 
     .buttonCTA {
         justify-content: flex-start;
         margin-top: 40px;
         margin-bottom: 50px;
+    }
+    .starterCTA, .demoCTA {
+        font-size: var(--paragraph-mobile);
     }
 
     .reviews,
@@ -955,6 +982,9 @@ h2 {
 
     .hero-text-wrapper p {
         margin: 0;
+    }
+    #reviews-desktop p {
+        font-size: 1.125rem;
     }
 
     #reviews-desktop,
@@ -995,11 +1025,11 @@ h2 {
     }
 
     .description {
-        font-size: var(--paragraph-desktop);
+        font-size: var(--paragraph-laptop);
     }
 
     h2 {
-        font-size: var(--h2-desktop);
+        font-size: var(--h2-laptop);
     }
 
     .cards-wrapper {
@@ -1008,11 +1038,11 @@ h2 {
     }
 
     .cards-item h3 {
-        font-size: var(--h3-desktop);
+        font-size: var(--h3-laptop);
     }
 
     .cards-item p {
-        font-size: 1rem;
+        font-size: var(--paragraph-laptop);
     }
 
     /* blog section starts here */
@@ -1025,6 +1055,12 @@ h2 {
     .description {
         width: 70%;
         margin: 5px auto;
+    }
+    .category {
+        font-size: var(--paragraph-laptop);
+    }
+    .banner-item p {
+        font-size: var(--paragraph-laptop);
     }
 
     .banner-wrapper {
@@ -1045,13 +1081,16 @@ h2 {
     }
 
     .banner-item h3 {
-        font-size: 1.37rem;
+        font-size: 1.35rem;
     }
 
     .banner-creator-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .banner-creator-text h4 {
+        font-size: var(--h4-laptop);
     }
 
     .banner-creator-text p {
@@ -1080,14 +1119,20 @@ h2 {
 
     .testimonials {
         margin: 0;
+        width: calc(100% / 3);
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .testimonials.desktop {
-        display: block;
+        display: flex;
     }
 
     .arrow-wrapper {
         margin-top: 40px;
+    }
+    .quote p {
+        font-size: var(--paragraph-laptop);
     }
 
     /* pricing section starts here */
@@ -1098,6 +1143,15 @@ h2 {
 
     .pricing-card {
         margin: 0;
+    }
+    .pricing-card h3 {
+        font-size: 1.5rem;
+    }
+    .pricing-card h4 {
+        font-size: var(--paragraph-laptop);
+    }
+    .pricing-card p {
+        font-size: var(--paragraph-laptop);
     }
 
     .slider-text {
@@ -1131,10 +1185,144 @@ h2 {
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
+        padding: 14px 26px;
     }
 
     .links {
-        display: flex;
-        gap: 16px;
+        flex-direction: row;
     }
+}
+
+/* here starts breakpoint for desktop */
+@media (min-width: 1441px) {
+     .headerBanner {
+        padding: 14px 162px;
+    }
+    #desktop-menu li a {
+        font-size: var(--paragraph-desktop);
+    }
+    .hero-text-wrapper {
+        padding-left: 50px;
+        padding-right: 162px;
+    }
+    .cta_Join a {
+        font-size: var(--paragraph-desktop);
+    }
+    .underlinedText {
+        font-size: 1.7rem;
+    }
+    .largeText {
+        font-size: 3.65rem;
+    }
+    .regularP {
+        font-size: var(--paragraph-desktop);
+    }
+    .starterCTA, .demoCTA {
+        font-size: var(--paragraph-desktop);
+    }
+    #reviews-desktop p {
+        font-size: 1.3rem;
+    }
+    #hero-wrapper {
+        margin-bottom: 106px;
+    }
+    /* features desction starts here */
+    #features-section {
+        margin: 0 162px 182px 162px;
+    }
+    h2 {
+        font-size: var(--h2-desktop);
+    }
+    .description {
+        font-size: var(--paragraph-desktop);
+    }
+    .cards-wrapper {
+        margin-top: 80px;
+        gap: 30px;
+    }
+    .cards-item h3 {
+        font-size: var(--h3-desktop);
+    }
+    .cards-item p {
+        font-size: var(--paragraph-desktop);
+    }
+    /* blog section starts here */
+    #blog-section {
+        margin: 0 162px 182px 162px;
+    }
+    .banner-wrapper {
+        margin-top: 80px;
+        gap: 30px;
+    }
+    .category {
+        font-size: var(--paragraph-desktop);
+    }
+    .banner-item h3 {
+        font-size: 1.6rem;
+    }
+    .banner-item p {
+        font-size: var(--paragraph-desktop);
+    }
+    .banner-creator-text h4 {
+        font-size: var(--h4-desktop);
+    }
+    /* testimonial section starts here */
+    #testimonial-section {
+        margin: 0 162px 177px 162px;
+    }
+    .quote p {
+        font-size: var(--paragraph-desktop);
+    }
+    .customer h4 {
+        font-size: var(--paragraph-desktop);
+    }
+    .testimonial-wrapper {
+        margin-top: 80px;
+    }
+    .arrow-wrapper {
+        margin-top: 50px;
+    }
+    /* pricing section starts here */
+    #pricing-section {
+        margin: 0 162px 150px 162px;
+    }
+    .monthly, .yearly, .slider-text {
+        font-size: var(--paragraph-desktop);
+    }
+    .price-slider {
+        margin-top: 80px;
+    }
+    .pricing-container {
+        margin-top: 50px;
+        gap: 30px;
+    }
+    .pricing-card h3 {
+        font-size: 1.85rem;
+    }
+    .pricing-card h4, .pricing-card p {
+        font-size: var(--paragraph-desktop);
+    }
+    .plan-CTA {
+        font-size: var(--paragraph-desktop);
+    }
+    /* footer starts here */
+    .footer-container {
+        padding: 50px 162px;
+    }
+    .footer-nav ul li a {
+        font-size: var(--paragraph-desktop);
+    }
+    .go-top-CTA a {
+        font-size: var(--paragraph-desktop);
+    }
+  .copyright {
+    font-size: var(--paragraph-desktop);
+  }
+  .links a {
+    font-size: var(--paragraph-desktop);
+  }
+  .footer-card {
+    margin-top: 50px;
+    padding: 16px 20px;
+  }
 }
