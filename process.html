@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/process.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Process</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerBanner">
+            <div class="cta_Join">
+                <a href="">
+                    <span>Join Our Personalized Nutrition Demo For Free</span>
+                </a>
+                <img class="backImg desktop" src="./images/backbanner.png" alt="banner design">
+                <img class="backImg2 desktop" src="./images/backbanner.png" alt="banner design">
+            </div>
+            <img class="backImg" src="./images/backbanner.png" alt="banner design">
+            <img class="backImg2" src="./images/backbanner.png" alt="banner design">
+        </div>
+        <nav>
+            <!-- Logo -->
+            <picture class="logoImg">
+                <!-- for desktop -->
+                <source media="(min-width: 1441px)" srcset="./images/logoDesktop.png">
+
+                <!-- for laptop -->
+                <source media="(min-width: 431px) and (max-width: 1440px)" srcset="./images/logoLaptop.png">
+
+                <!-- for mobile-->
+                <source media="(max-width: 430px)" srcset="./images/logoMobile.png">
+
+                <!-- fallback -->
+                <img src="./images/logoDesktop.png" alt="logo">
+            </picture>
+
+            <!-- Hamburger toggle -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+                <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 100 80"
+                    fill="#CBEA7B">
+                    <rect class="bar top" width="100" height="8" rx="4" />
+                    <rect class="bar middle" y="32" width="100" height="8" rx="4" />
+                    <rect class="bar bottom" y="64" x="50" width="50" height="8" rx="4" />
+                </svg>
+                <!-- X SVG -->
+                <svg class="x-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 100 100"
+                    fill="#CBEA7B">
+                    <line x1="0" y1="0" x2="70" y2="70" stroke="#CBEA7B" stroke-width="8" stroke-linecap="round" />
+                    <line x1="70" y1="0" x2="0" y2="70" stroke="#CBEA7B" stroke-width="8" stroke-linecap="round" />
+                </svg>
+            </label>
+            <!-- menu mobile -->
+            <ul class="main_nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="/process.html">Process</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+            <!-- for laptop and desktop menu -->
+            <ul id="desktop-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="/process.html">Process</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Blog</a></li>
+                <li id="contact"><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="process-section">
+            <picture>
+                <!-- for desktop -->
+                <source media="(min-width: 1441px)" srcset="./images/process-desktop.png">
+
+                <!-- for laptop -->
+                <source media="(min-width: 431px) and (max-width: 1440px)" srcset="./images/process-laptop.png">
+
+                <!-- for mobile -->
+                <source media="(max-width: 430px)" srcset="./images/process-mobile.png">
+
+                <!-- fallback -->
+                <img src="./images/process-desktop.png" alt="nutritionist image">
+            </picture>
+            <h1>Your Journey To Health and Wellness</h1>
+            <p>At Nutritionist, we believe in providing a personalized and comprehensive approach to help you achieve
+                your health and wellness goals. Our "How it Works" process is designed to guide you through each step of
+                your journey, ensuring that you receive the support, knowledge, and tools you need to succeed. Here's a
+                detailed breakdown of our process:</p>
+        </section>
+    </main>
+</body>
+
+</html>

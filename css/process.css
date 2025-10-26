@@ -1,0 +1,30 @@
+/* here starts process section */
+#process-section {
+    background-color: var(--green95);
+    border: 1px solid var(--green85);
+    border-radius: 10px;
+    margin: 50px 16px;
+    padding: 30px;
+    text-align: center;
+    background-image: url(../images/abstract-design.png);
+    background-size: 100% 50%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#process-section img {
+    margin-bottom: 30px;
+}
+
+#process-section h1 {
+    font-size: 1.75rem;
+    color: var(--grey15);
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+#process-section p {
+    line-height: 1.5;
+    color: var(--grey20);
+    font-size: var(--paragraph-mobile);
+}
