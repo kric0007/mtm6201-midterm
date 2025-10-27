@@ -1,3 +1,7 @@
+:root {
+    --h1-mobile: 1.75rem;
+}
+
 /* here starts process section */
 #process-section {
     background-color: var(--green95);
@@ -16,15 +20,143 @@
     margin-bottom: 30px;
 }
 
-#process-section h1 {
-    font-size: 1.75rem;
+#process-section h1,
+.works-description h1 {
+    font-size: var(--h1-mobile);
     color: var(--grey15);
     font-weight: 500;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    line-height: 1.5;
 }
 
-#process-section p {
+#process-section p,
+.works-description p {
     line-height: 1.5;
     color: var(--grey20);
     font-size: var(--paragraph-mobile);
 }
+
+/* here starts cards section */
+.works-description {
+    text-align: center;
+    margin: 0 16px 50px 16px;
+}
+
+.works-description h1 {
+    font-weight: 600;
+}
+
+.number {
+    font-size: 5rem;
+    color: var(--darkgreen40);
+    position: relative;
+    bottom: -36px;
+    margin: 0 16px;
+}
+
+.works-card-item {
+    background-color: var(--green95);
+    border: 1px solid var(--green90);
+    border-radius: 10px;
+    position: relative;
+    margin: 0 16px;
+    padding: 30px;
+    gap: 30px;
+}
+
+.works-card-item h3 {
+    color: var(--grey15);
+    font-weight: 600;
+    font-size: var(--paragraph-desktop);
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+
+.works-card-item p {
+    color: var(--grey30);
+    font-size: var(--paragraph-mobile);
+    line-height: 1.5;
+    margin-top: 16px;
+}
+
+.works-card-container:first-of-type h3::before {
+    content: url('../images/consultation-icon.png');
+    margin-right: 10px;
+}
+
+.works-card-container:nth-of-type(2) h3::before {
+    content: url('../images/need-icon.png');
+    margin-right: 10px;
+}
+
+.works-card-container:nth-of-type(3) h3::before {
+    content: url('../images/plan-icon.png');
+    margin-right: 10px;
+}
+
+.works-card-container:nth-of-type(4) h3::before {
+    content: url('../images/meal-icon.png');
+    margin-right: 10px;
+}
+
+/* here starts last section */
+#join-section {
+    margin: 50px 16px;
+    background-color: var(--green95);
+    border: 1px solid var(--green85);
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+#join-section h2 {
+    color: var(--grey15);
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#join-section p {
+    color: var(--grey20);
+    line-height: 1.5;
+    font-size: var(--paragraph-mobile);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.join-now {
+    background-color: var(--green70);
+    padding: 14px 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.join-now a {
+    text-decoration: none;
+    color: var(--grey15);
+    font-size: var(--paragraph-mobile);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.design1 {
+    position: absolute;
+    transform: scaleX(-1);
+    top: -10%;
+    left: -16%;
+    height: 80px;
+    width: 128px;
+}
+
+.design2 {
+    position: absolute;
+    top: 79%;
+    left: 78%;
+    height: 65px;
+    width: 92px;
+}
+
