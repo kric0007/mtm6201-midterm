@@ -393,7 +393,7 @@ h2 {
 }
 
 .cards-item:nth-child(3) h3::before {
-    content: url('../images/cutterly-icon.png');
+    content: url('../images/meal-icon.png');
     margin-right: 10px;
 }
 

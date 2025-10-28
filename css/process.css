@@ -25,7 +25,7 @@
     font-size: var(--h1-mobile);
     color: var(--grey15);
     font-weight: 500;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
     line-height: 1.5;
 }
 
@@ -100,6 +100,10 @@
     margin-right: 10px;
 }
 
+.desktop {
+    display: none;
+}
+
 /* here starts last section */
 #join-section {
     margin: 50px 16px;
@@ -133,6 +137,7 @@
     display: flex;
     justify-content: center;
     border-radius: 6px;
+    text-decoration: none;
 }
 
 .join-now a {
@@ -154,9 +159,204 @@
 
 .design2 {
     position: absolute;
-    top: 79%;
-    left: 78%;
-    height: 65px;
-    width: 92px;
+    top: 78%;
+    left: 82%;
+    height: 125px;
+    width: 125px;
 }
 
+/* here starts breakpoint for laptop */
+@media (min-width: 970px) {
+    #process-section {
+        margin: 80px;
+        padding: 80px;
+    }
+
+    #process-section img {
+        margin-bottom: 60px;
+    }
+
+    #process-section h1,
+    .works-description h1 {
+        font-size: 2.375rem;
+        padding-bottom: 10px;
+    }
+
+    #process-section p,
+    .works-description p {
+        font-size: 1rem;
+    }
+
+    #how-works-section {
+        margin: 0 80px;
+    }
+
+    .works-description p {
+        margin: 0 250px;
+
+    }
+
+    .works-card-wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .desktop {
+        display: flex;
+    }
+
+    .works-card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .works-card-container:nth-of-type(5).desktop h3::before {
+        content: url('../images/support-icon.png');
+        margin-right: 10px;
+    }
+
+    .works-card-container:nth-of-type(6).desktop h3::before {
+        content: url('../images/progress-icon.png');
+        margin-right: 10px;
+    }
+
+    .works-card-container:nth-of-type(7).desktop h3::before {
+        content: url('../images/check-icon.png');
+        margin-right: 10px;
+    }
+
+    .works-card-container:nth-of-type(8).desktop h3::before {
+        content: url('../images/hat-icon.png');
+        margin-right: 10px;
+    }
+
+    .works-card-container:nth-of-type(9).desktop h3::before {
+        content: url('../images/adjustment-icon.png');
+        margin-right: 10px;
+    }
+
+    .works-card-container:nth-of-type(10).desktop h3::before {
+        content: url('../images/sustain-icon.png');
+        margin-right: 10px;
+    }
+
+    .works-card-item {
+        padding: 40px;
+        gap: 40px;
+        height: 100%;
+    }
+
+    .works-card-item h3 {
+        font-size: 1.250rem;
+    }
+
+    .works-card-item p {
+        font-size: var(--paragraph-laptop);
+        margin-top: 20px;
+    }
+
+    #join-section {
+        margin: 100px 80px;
+        padding: 60px;
+        display: flex;
+    }
+
+    #join-section p {
+        text-align: left;
+        font-size: var(--paragraph-laptop);
+    }
+
+    #join-section h2 {
+        font-size: 1.625rem;
+        text-align: left;
+    }
+
+    .join-text-content {
+        width: 80%;
+    }
+
+    .join-now-wrapper {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .design1 {
+        top: -24%;
+        left: -6%;
+        height: 160px;
+        width: 200px;
+    }
+
+    .design2 {
+        top: 61%;
+        left: 92%;
+        height: 113px;
+        width: 113px;
+    }
+}
+
+/* here starts breakpoint for desktop */
+@media (min-width: 1441px) {
+    #process-section {
+        margin: 100px 162px;
+        padding: 100px;
+    }
+
+    #process-section img {
+        margin-bottom: 80px;
+    }
+
+    #process-section h1,
+    #how-works-section h1 {
+        font-size: 3rem;
+    }
+
+    #process-section p,
+    .works-description p {
+        font-size: var(--paragraph-desktop);
+    }
+
+    #how-works-section {
+        margin: 0 162px;
+    }
+
+    .works-card-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .works-description {
+        margin-bottom: 80PX;
+    }
+
+    .works-card-item {
+        gap: 50px;
+    }
+    #join-section {
+        margin: 150px 162px;
+        padding: 80px;
+    }
+    #join-section h2 {
+        font-size: 2.125rem;
+    }
+    #join-section p {
+        font-size: var(--paragraph-desktop);
+    }
+    .join-now {
+        font-size: var(--paragraph-desktop);
+        padding: 18px 24px;
+    }
+    .design1 {
+        top: -14%;
+        left: -4%;
+        height: ;
+        width: ;
+    }
+    .design2 {
+        top: 55%;
+        left: 92%;
+        height: 143.29px;
+        width: 223.37px ;
+    }
+}
