@@ -81,22 +81,22 @@
 }
 
 .works-card-container:first-of-type h3::before {
-    content: url('../images/consultation-icon.png');
+    content: url('../images/icons/consultation-icon.png');
     margin-right: 10px;
 }
 
 .works-card-container:nth-of-type(2) h3::before {
-    content: url('../images/need-icon.png');
+    content: url('../images/icons/need-icon.png');
     margin-right: 10px;
 }
 
 .works-card-container:nth-of-type(3) h3::before {
-    content: url('../images/plan-icon.png');
+    content: url('../images/icons/plan-icon.png');
     margin-right: 10px;
 }
 
 .works-card-container:nth-of-type(4) h3::before {
-    content: url('../images/meal-icon.png');
+    content: url('../images/icons/meal-icon.png');
     margin-right: 10px;
 }
 
@@ -211,32 +211,32 @@
     }
 
     .works-card-container:nth-of-type(5).desktop h3::before {
-        content: url('../images/support-icon.png');
+        content: url('../images/icons/support-icon.png');
         margin-right: 10px;
     }
 
     .works-card-container:nth-of-type(6).desktop h3::before {
-        content: url('../images/progress-icon.png');
+        content: url('../images/icons/progress-icon.png');
         margin-right: 10px;
     }
 
     .works-card-container:nth-of-type(7).desktop h3::before {
-        content: url('../images/check-icon.png');
+        content: url('../images/icons/check-icon.png');
         margin-right: 10px;
     }
 
     .works-card-container:nth-of-type(8).desktop h3::before {
-        content: url('../images/hat-icon.png');
+        content: url('../images/icons/hat-icon.png');
         margin-right: 10px;
     }
 
     .works-card-container:nth-of-type(9).desktop h3::before {
-        content: url('../images/adjustment-icon.png');
+        content: url('../images/icons/adjustment-icon.png');
         margin-right: 10px;
     }
 
     .works-card-container:nth-of-type(10).desktop h3::before {
-        content: url('../images/sustain-icon.png');
+        content: url('../images/icons/sustain-icon.png');
         margin-right: 10px;
     }
 
