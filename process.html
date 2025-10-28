@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+     <header>
         <div class="headerBanner">
             <div class="cta_Join">
                 <a href="">
@@ -29,17 +29,11 @@
         <nav>
             <!-- Logo -->
             <picture class="logoImg">
-                <!-- for desktop -->
-                <source media="(min-width: 1441px)" srcset="./images/logoDesktop.png">
+                <!-- for desktop/laptop -->
+                <source media="(min-width: 431px)" srcset="./images/logo/logoDesktop.png">
 
-                <!-- for laptop -->
-                <source media="(min-width: 431px) and (max-width: 1440px)" srcset="./images/logoLaptop.png">
-
-                <!-- for mobile-->
-                <source media="(max-width: 430px)" srcset="./images/logoMobile.png">
-
-                <!-- fallback -->
-                <img src="./images/logoDesktop.png" alt="logo">
+                <!-- for smaller screens -->
+                <img src="./images/logo/logoMobile.png" alt="logo">
             </picture>
 
             <!-- Hamburger toggle -->
@@ -58,11 +52,12 @@
                     <line x1="70" y1="0" x2="0" y2="70" stroke="#CBEA7B" stroke-width="8" stroke-linecap="round" />
                 </svg>
             </label>
+
             <!-- menu mobile -->
             <ul class="main_nav">
-                <li><a href="/index.html">Home</a></li>
+                <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
-                <li><a href="">Team</a></li>
+                <li><a href="/team.html">Team</a></li>
                 <li><a href="/process.html">Process</a></li>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Blog</a></li>
@@ -70,9 +65,9 @@
             </ul>
             <!-- for laptop and desktop menu -->
             <ul id="desktop-menu">
-                <li><a href="/index.html">Home</a></li>
+                <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
-                <li><a href="">Team</a></li>
+                <li><a href="/team.html">Team</a></li>
                 <li><a href="/process.html">Process</a></li>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Blog</a></li>
@@ -87,14 +82,11 @@
                 <!-- for desktop -->
                 <source media="(min-width: 1441px)" srcset="./images/process-desktop.png">
 
-                <!-- for laptop -->
-                <source media="(min-width: 431px) and (max-width: 1440px)" srcset="./images/process-laptop.png">
-
                 <!-- for mobile -->
                 <source media="(max-width: 430px)" srcset="./images/process-mobile.png">
 
                 <!-- fallback -->
-                <img src="./images/process-desktop.png" alt="nutritionist image">
+                <img src="./images/process-desktop.png" alt="nutritionist logomark">
             </picture>
             <h1>Your Journey To Health and Wellness</h1>
             <p>At Nutritionist, we believe in providing a personalized and comprehensive approach to help you achieve
@@ -233,19 +225,12 @@
         </section>
         <footer class="footer-container">
             <div class="nav-container">
-                <!-- logo on footer -->
-                <picture class="logoImg-footer">
-                    <!-- for desktop -->
-                    <source media="(min-width: 1441px)" srcset="./images/logoDesktop.png">
+               <picture class="logoImg">
+                    <!-- for desktop/laptop -->
+                    <source media="(min-width: 431px)" srcset="./images/logo/logoDesktop.png">
 
-                    <!-- for laptop -->
-                    <source media="(min-width: 431px) and (max-width: 1440px)" srcset="./images/logoLaptop.png">
-
-                    <!-- for mobile -->
-                    <source media="(max-width: 430px)" srcset="./images/logoMobile.png">
-
-                    <!-- fallback -->
-                    <img src="./images/logoDesktop.png" alt="logo">
+                    <!-- for smaller screens -->
+                    <img src="./images/logo/logoMobile.png" alt="logo">
                 </picture>
                 <!-- go to top action -->
                 <div class="go-top-CTA">
@@ -261,7 +246,7 @@
                     <ul>
                         <li><a href="/index.html">Home</a></li>
                         <li><a href="">About</a></li>
-                        <li><a href="">Team</a></li>
+                        <li><a href="/team.html">Team</a></li>
                         <li><a href="/process.html">Process</a></li>
                         <li><a href="">Pricing</a></li>
                         <li><a href="">Blog</a></li>

@@ -383,32 +383,32 @@ h2 {
 }
 
 .cards-item:nth-child(1) h3::before {
-    content: url('../images/flower-icon.png');
+    content: url('../images/icons/flower-icon.png');
     margin-right: 10px;
 }
 
 .cards-item:nth-child(2) h3::before {
-    content: url('../images/hat-icon.png');
+    content: url('../images/icons/hat-icon.png');
     margin-right: 10px;
 }
 
 .cards-item:nth-child(3) h3::before {
-    content: url('../images/meal-icon.png');
+    content: url('../images/icons/meal-icon.png');
     margin-right: 10px;
 }
 
 .cards-item:nth-child(4) h3::before {
-    content: url('../images/menu-icon.png');
+    content: url('../images/icons/menu-icon.png');
     margin-right: 10px;
 }
 
 .cards-item:nth-child(5) h3::before {
-    content: url('../images/dumbell-icon.png');
+    content: url('../images/icons/dumbell-icon.png');
     margin-right: 10px;
 }
 
 .cards-item:nth-child(6) h3::before {
-    content: url('../images/bag-icon.png');
+    content: url('../images/icons/bag-icon.png');
     margin-right: 10px;
 }
 
@@ -528,7 +528,7 @@ h2 {
 }
 
 .quote::before {
-    content: url(../images/quotation-icon.svg);
+    content: url(../images/icons/quotation-icon.svg);
 }
 
 .customer {
@@ -774,17 +774,17 @@ h2 {
 }
 
 .email a::before {
-    content: url('../images/email-icon.png');
+    content: url('../images/icons/email-icon.png');
     padding-right: 5px;
 }
 
 .phone a::before {
-    content: url('../images/phone-icon.png');
+    content: url('../images/icons/phone-icon.png');
     padding-right: 5px;
 }
 
 .location a::before {
-    content: url('../images/location-icon.png');
+    content: url('../images/icons/location-icon.png');
     padding-right: 5px;
 }
 

@@ -28,17 +28,11 @@
         <nav>
             <!-- Logo -->
             <picture class="logoImg">
-                <!-- for desktop -->
-                <source media="(min-width: 1441px)" srcset="./images/logoDesktop.png">
+                <!-- for desktop/laptop -->
+                <source media="(min-width: 431px)" srcset="./images/logo/logoDesktop.png">
 
-                <!-- for laptop -->
-                <source media="(min-width: 431px) and (max-width: 1440px)" srcset="./images/logoLaptop.png">
-
-                <!-- for mobile-->
-                <source media="(max-width: 430px)" srcset="./images/logoMobile.png">
-
-                <!-- fallback -->
-                <img src="./images/logoDesktop.png" alt="logo">
+                <!-- for smaller screens -->
+                <img src="./images/logo/logoMobile.png" alt="logo">
             </picture>
 
             <!-- Hamburger toggle -->
@@ -62,7 +56,7 @@
             <ul class="main_nav">
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
-                <li><a href="">Team</a></li>
+                <li><a href="/team.html">Team</a></li>
                 <li><a href="/process.html">Process</a></li>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Blog</a></li>
@@ -72,7 +66,7 @@
             <ul id="desktop-menu">
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
-                <li><a href="">Team</a></li>
+                <li><a href="/team.html">Team</a></li>
                 <li><a href="/process.html">Process</a></li>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Blog</a></li>
@@ -84,28 +78,17 @@
     <main>
         <section id="hero-wrapper">
             <div class="wrapper">
-                <picture>
-                    <!-- for desktop -->
-                    <source media="(min-width: 1441px)" srcset="./images/nutriDesktop.png">
+                <img srcset="./images/nutriDesktop-400x.png 400w,
+                    ./images/nutriDesktop.png 949w" sizes="(max-width: 430px) 400px,
+                            (min-width: 431px) 949px" src="./images/nutriDesktop.png" alt="nutritionist image">
 
-                    <!-- for laptop -->
-                    <source media="(min-width: 431px) and (max-width: 1440px)" srcset="./images/nutriLaptop.png">
-
-                    <!-- for mobile -->
-                    <source media="(max-width: 430px)" srcset="./images/nutriMobile.png">
-
-
-                    <!-- fallback -->
-                    <img class="nutriImg" src="./images/nutriDesktop.png" alt="nutritionist image">
-
-                </picture>
                 <div class="review-images-wrapper">
                     <div class="review-images">
-                        <img src="./images/review_img3.png" alt="testimonial person wearing pink blouse">
+                        <img src="./images/small-images/review_img3.png" alt="testimonial person wearing pink blouse">
 
-                        <img src="./images/review_img2.png" alt="testimonial person wearaing light green blouse">
+                        <img src="./images/small-images/review_img2.png" alt="testimonial person wearaing light green blouse">
 
-                        <img src="./images/review_img1.png" alt="testimonial person wearing dark green blouse">
+                        <img src="./images/small-images/review_img1.png" alt="testimonial person wearing dark green blouse">
                     </div>
                     <div class="reviews">
                         <p>
@@ -134,11 +117,11 @@
                 </div>
                 <div class="reviews-desktop-wrapper">
                     <div id="review-images-desktop">
-                        <img src="./images/review_img3.png" alt="testimonial person wearing pink blouse">
+                        <img src="./images/small-images/review_img3.png" alt="testimonial person wearing pink blouse">
 
-                        <img src="./images/review_img2.png" alt="testimonial person wearaing light green blouse">
+                        <img src="./images/small-images/review_img2.png" alt="testimonial person wearaing light green blouse">
 
-                        <img src="./images/review_img1.png" alt="testimonial person wearing dark green blouse">
+                        <img src="./images/small-images/review_img1.png" alt="testimonial person wearing dark green blouse">
                     </div>
                     <div id="reviews-desktop">
                         <p>
@@ -213,20 +196,10 @@
             <div class="banner-wrapper">
                 <!-- 1 banner starts here -->
                 <div class="banner-item">
-                    <picture class="banner-img">
-                        <!-- for desktop -->
-                        <source media="(min-width: 1441px)" srcset="./images/blog-img1desktop.png">
-
-                        <!-- for laptop -->
-                        <source media="(min-width: 431px) and (max-width: 1440px)"
-                            srcset="./images/blog-img1laptop.png">
-
-                        <!-- for mobile -->
-                        <source media="(max-width: 430px)" srcset="./images/blog-img1mobile.png">
-
-                        <!-- fallback -->
-                        <img class="image" src="./images/blog-img1desktop.png" alt="woman drinking water">
-                    </picture>
+                    <img class="banner-img" srcset="./images/blog-images/blog-img1desktop-400x.png 400w,
+                   ./images/blog-images/blog-img1desktop.png 703w" sizes="(max-width: 430px) 400px,
+                            (min-width: 431px) 703px" src="./images/blog-images/blog-img1desktop.png"
+                        alt="woman drinking water">
                     <h3>
                         <span class="category">Weight Loss</span>
                         <span>The Benefits of Hydration for Weight Loss</span>
@@ -235,20 +208,7 @@
                     <!-- 1 creator banner starts here -->
                     <div class="banner-creator-container">
                         <div class="banner-creator">
-                            <picture>
-                                <!-- for desktop -->
-                                <source media="(min-width: 1441px)" srcset="./images/emilyJohnson-desktop.png">
-
-                                <!-- for laptop -->
-                                <source media="(min-width: 431px) and (max-width: 1440px)"
-                                    srcset="./images/emilyJohnson-laptop.png">
-
-                                <!-- for mobile -->
-                                <source media="(max-width: 430px)" srcset="./images/emilyJohnson-mobile.png">
-
-                                <!-- fallback -->
-                                <img src="./images/emilyJohnson-desktop.png" alt="women wearing pink blouse">
-                            </picture>
+                            <img src="./images/small-images/emilyJohnson.png" alt="women wearing pink blouse">
                             <div class="banner-creator-text">
                                 <h4>Emily Johnson</h4>
                                 <p>23 May 2023 - 5 min read</p>
@@ -275,22 +235,10 @@
                 </div>
                 <!-- 2 banner starts here -->
                 <div class="banner-item">
-                    <picture class="banner-img">
-                        <!-- for desktop -->
-                        <source media="(min-width: 1441px)" srcset="./images/blog-img2desktop.png">
-
-
-                        <!-- for laptop -->
-                        <source media="(min-width: 431px) and (max-width: 1440px)"
-                            srcset="./images/blog-img2laptop.png">
-
-                        <!-- for mobile -->
-                        <source media="(max-width: 430px)" srcset="./images/blog-img2mobile.png">
-
-                        <!-- fallback -->
-                        <img class="image" src="./images/blog-img2desktop.png"
-                            alt="two women deciding on food on a pink and green background">
-                    </picture>
+                    <img class="banner-img" srcset="./images/blog-images/blog-img2desktop-400x.png 400w,
+                   ./images/blog-images/blog-img2desktop.png 703w" sizes="(max-width: 430px) 400px,
+                            (min-width: 431px) 703px" src="./images/blog-images/blog-img2desktop.png"
+                        alt="two women deciding between foods">
                     <h3>
                         <span class="category">Understanding Macronutrients</span>
                         <span>Carbohydrates, Proteins, and Fats</span>
@@ -300,20 +248,7 @@
                     <!-- 2 creator banner starts here -->
                     <div class="banner-creator-container">
                         <div class="banner-creator">
-                            <picture>
-                                <!-- for desktop -->
-                                <source media="(min-width: 1441px)" srcset="./images/markWilson-desktop.png">
-
-                                <!-- for laptop -->
-                                <source media="(min-width: 431px) and (max-width: 1440px)"
-                                    srcset="./images/markWilson-laptop.png">
-
-                                <!-- for mobile -->
-                                <source media="(max-width: 430px)" srcset="./images/markWilson-mobile.png">
-
-                                <!-- fallback -->
-                                <img src="./images/markWilson-desktop.png" alt="man wearing t shirt at a restaurant">
-                            </picture>
+                            <img src="./images/small-images/markWilson.png" alt="man wearing t shirt at a restaurant">
                             <div class="banner-creator-text">
                                 <h4>Mark Wilson</h4>
                                 <p>23 May 2023 - 5 min read</p>
@@ -340,21 +275,10 @@
                 </div>
                 <!-- 3 banner starts here -->
                 <div class="banner-item">
-                    <picture class="banner-img">
-                        <!-- for desktop -->
-                        <source media="(min-width: 1441px)" srcset="./images/blog-img3desktop.png">
-
-                        <!-- for laptop -->
-                        <source media="(min-width: 431px) and (max-width: 1440px)"
-                            srcset="./images/blog-img3laptop.png">
-
-                        <!-- for mobile -->
-                        <source media="(max-width: 430px)" srcset="./images/blog-img3mobile.png">
-
-                        <!-- fallback -->
-                        <img class="image" src="./images/blog-img3desktop.png"
-                            alt="two women deciding on food on a pink and green background">
-                    </picture>
+                    <img class="banner-img" srcset="./images/blog-images/blog-img3desktop-400x.png 400w,
+                   ./images/blog-images/blog-img3desktop.png 703w" sizes="(max-width: 430px) 400px,
+                            (min-width: 431px) 703px" src="./images/blog-images/blog-img3desktop.png"
+                        alt="woman indecise between tow options of snack">
                     <h3>
                         <span class="category">Mindful Eating</span>
                         <span>Cultivating a Healthy Relationship with Food</span>
@@ -364,20 +288,8 @@
                     <!-- 3 creator banner starts here -->
                     <div class="banner-creator-container">
                         <div class="banner-creator">
-                            <picture>
-                                <!-- for desktop -->
-                                <source media="(min-width: 1441px)" srcset="./images/sarahThompson-desktop.png">
-
-                                <!-- for laptop -->
-                                <source media="(min-width: 431px) and (max-width: 1440px)"
-                                    srcset="./images/sarahThompson-laptop.png">
-
-                                <!-- for mobile -->
-                                <source media="(max-width: 430px)" srcset="./images/sarahThompson-mobile.png">
-
-                                <!-- fallback -->
-                                <img src="./images/sarahThompson-desktop.png"
-                                    alt="woman looking indecise between two food options">
+                            <img src="./images/small-images/sarahThompson.png"
+                                alt="woman looking indecise between two food options">
                             </picture>
                             <div class="banner-creator-text">
                                 <h4>Sarah Thompson</h4>
@@ -405,20 +317,10 @@
                 </div>
                 <!-- 4 banner starts here -->
                 <div class="banner-item">
-                    <picture class="banner-img">
-                        <!-- for desktop -->
-                        <source media="(min-width: 1441px)" srcset="./images/blog-img4desktop.png">
-
-                        <!-- for laptop -->
-                        <source media="(min-width: 431px) and (max-width: 1440px)"
-                            srcset="./images/blog-img4laptop.png">
-
-                        <!-- for mobile -->
-                        <source media="(max-width: 430px)" srcset="./images/blog-img4mobile.png">
-
-                        <!-- fallback -->
-                        <img class="image" src="./images/blog-img4desktop.png" alt="two options of meal">
-                    </picture>
+                    <img class="banner-img" srcset="./images/blog-images/blog-img4desktop-400x.png 400w,
+                   ./images/blog-images/blog-img4desktop.png 703w" sizes="(max-width: 430px) 400px,
+                            (min-width: 431px) 703px" src="./images/blog-images/blog-img4desktop.png"
+                        alt="two different options of meals">
                     <h3>
                         <span class="category">Healthy Snacks on the Go</span>
                         <span>Quick and Nutritious Options</span>
@@ -428,21 +330,9 @@
                     <!-- 4 banner creator banner starts here -->
                     <div class="banner-creator-container">
                         <div class="banner-creator">
-                            <picture>
-                                <!-- for desktop -->
-                                <source media="(min-width: 1024px)" srcset="./images/emilyJohnson2-desktop.png">
+                            <img src="./images/small-images/emilyJohnson2.png"
+                                alt="woman looking indecise between two food options">
 
-                                <!-- for laptop -->
-                                <source media="(min-width: 431px) and (max-width: 1023px)"
-                                    srcset="./images/emilyJohnson2-laptop.png">
-
-                                <!-- for mobile -->
-                                <source media="(max-width: 430px)" srcset="./images/emilyJohnson2-mobile.png">
-
-                                <!-- fallback -->
-                                <img src="./images/emilyJohnson2-desktop.png"
-                                    alt="woman looking indecise between two food options">
-                            </picture>
                             <div class="banner-creator-text">
                                 <h4>Emily Johnson</h4>
                                 <p>23 May 2023 - 5 min read</p>
@@ -483,20 +373,7 @@
                         </p>
                     </div>
                     <div class="customer">
-                        <picture>
-                            <!-- for desktop -->
-                            <source media="(min-width: 1441px)" srcset="./images/jennifer-desktop.png">
-
-                            <!-- for laptop -->
-                            <source media="(min-width: 431px) and (max-width: 1440px)"
-                                srcset="./images/jennifer-laptop.png">
-
-                            <!-- for mobile -->
-                            <source media="(max-width: 430px)" srcset="./images/jennifer-mobile.png">
-
-                            <!-- fallback -->
-                            <img src="./images/jennifer-desktop.png" alt="woman smilling">
-                        </picture>
+                        <img src="./images/small-images/jennifer.png" alt="woman smilling">
                         <h4>Jennifer Anderson</h4>
                     </div>
                 </div> <!-- testimonial ends-->
@@ -510,17 +387,8 @@
                         </p>
                     </div>
                     <div class="customer">
-                        <picture>
-                            <!-- for desktop -->
-                            <source media="(min-width: 1441px)" srcset="./images/robert-desktop.png">
+                        <img src="./images/small-images/robert.png" alt="man smilling">
 
-                            <!-- for laptop -->
-                            <source media="(min-width: 431px) and (max-width: 1440px)"
-                                srcset="./images/robert-laptop.png">
-
-                            <!-- fallback -->
-                            <img src="./images/robert-desktop.png" alt="man smilling">
-                        </picture>
                         <h4>Robert Johnson</h4>
                     </div>
                 </div><!--2nd card of testimonial ends here-->
@@ -533,17 +401,8 @@
                         </p>
                     </div>
                     <div class="customer">
-                        <picture>
-                            <!-- for desktop -->
-                            <source media="(min-width: 1441px)" srcset="./images/emily-desktop.png">
+                        <img src="./images/small-images/emily.png" alt="woman smilling">
 
-                            <!-- for laptop -->
-                            <source media="(min-width: 431px) and (max-width: 1440px)"
-                                srcset="./images/emily-laptop.png">
-
-                            <!-- fallback -->
-                            <img src="./images/emily-desktop.png" alt="woman smilling">
-                        </picture>
                         <h4>Emily Davis</h4>
                     </div>
                 </div> <!--3rd card of testimonials ends here-->
@@ -642,18 +501,12 @@
         <footer class="footer-container">
             <div class="nav-container">
                 <!-- logo on footer -->
-                <picture class="logoImg-footer">
-                    <!-- for desktop -->
-                    <source media="(min-width: 1441px)" srcset="./images/logoDesktop.png">
+                <picture class="logoImg">
+                    <!-- for desktop/laptop -->
+                    <source media="(min-width: 431px)" srcset="./images/logo/logoDesktop.png">
 
-                    <!-- for laptop -->
-                    <source media="(min-width: 431px) and (max-width: 1440px)" srcset="./images/logoLaptop.png">
-
-                    <!-- for mobile -->
-                    <source media="(max-width: 430px)" srcset="./images/logoMobile.png">
-
-                    <!-- fallback -->
-                    <img src="./images/logoDesktop.png" alt="logo">
+                    <!-- for smaller screens -->
+                    <img src="./images/logo/logoMobile.png" alt="logo">
                 </picture>
                 <!-- go to top action -->
                 <div class="go-top-CTA">
@@ -669,7 +522,7 @@
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
-                        <li><a href="">Team</a></li>
+                        <li><a href="/team.html">Team</a></li>
                         <li><a href="/process.html">Process</a></li>
                         <li><a href="">Pricing</a></li>
                         <li><a href="">Blog</a></li>

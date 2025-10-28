@@ -1,0 +1,32 @@
+#process-section {
+    margin-bottom: 0;
+}
+.members-selection {
+    background-color: var(--darkgreen20);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0 16px;
+    /* will allow to scroll when needed */
+    overflow-x: auto;
+    padding: 20px;
+}
+.members-selection ul {
+    display: flex;
+    /* if there is space between words, will not break line */
+    white-space: nowrap;
+    gap: 20px;
+}
+.members-selection ul li {
+    list-style: none;
+    padding: 12px 18px;
+}
+.members-selection ul li:first-of-type {
+   background-color: var(--darkgreen25);
+   border: 1px solid var(--darkgreen30);
+   border-radius: 6px;
+}
+.members-selection ul li a {
+    text-decoration: none;
+    color: var(--absolutewhite);
+    font-size: var(--paragraph-mobile);
+}
