@@ -164,6 +164,9 @@
     height: 125px;
     width: 125px;
 }
+.join-now:hover {
+    background-color: var(--green85);
+}
 
 /* here starts breakpoint for laptop */
 @media (min-width: 970px) {

@@ -12,6 +12,7 @@
     --darkgreen25: #2C5446;
     --darkgreen30: #346454;
     --darkgreen40: #468671;
+    --darkgreen60: #79B9A4;
     --green70: #CBEA7B;
     --green80: #DCF1A7;
     --green85: #E5F5BD;
@@ -37,6 +38,21 @@
     --h4-mobile: 1rem;
     --h4-laptop: 1.15rem;
     --h4-desktop: 1.35rem;
+}
+
+.skip-links {
+    list-style: none;
+}
+
+.skip-links a {
+    position: absolute;
+    top: -3em;
+    color: white;
+}
+
+.skip-links a:focus {
+    top: 0;
+    z-index: 1;
 }
 
 body {
@@ -480,7 +496,7 @@ h2 {
 .banner-creator-text h4 {
     color: var(--darkgreen15);
     font-weight: 600;
-    font-size:var(--h4-mobile);
+    font-size: var(--h4-mobile);
 }
 
 .banner-creator-text p {
@@ -747,6 +763,7 @@ h2 {
     flex-direction: column;
     gap: 16px;
 }
+
 .links {
     display: flex;
     flex-direction: column;
@@ -797,14 +814,37 @@ h2 {
     font-size: var(--paragraph-mobile);
 }
 
+/* animation property - will pulse a glow around primary heading1 */
+.largeText {
+    text-shadow: 0 0 5px #2C5446, 0 0 10px #2C5446, 0 0 20px #2C5446, 0 0 40px #2C5446, 0 0 80px #2C5446;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #CBEA7B, 0 0 10px #CBEA7B, 0 0 20px #CBEA7B, 0 0 40px #CBEA7B, 0 0 80px #CBEA7B;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #FAFDF2, 0 0 20px #FAFDF2, 0 0 40px #FAFDF2, 0 0 80px #FAFDF2, 0 0 160px #FAFDF2;
+    }
+}
+
+/* there is no hover on mobile */
+/* .main_nav li a:hover {
+    background-color: var(--darkgreen30);
+} */
+
 /* here starts breakpoint for laptop */
 @media (min-width: 970px) {
     .headerBanner {
         padding: 14px 80px;
     }
+
     .cta_Join {
         overflow: hidden;
     }
+
     .cta_Join a {
         font-size: 1rem;
     }
@@ -837,6 +877,7 @@ h2 {
         height: 67px;
         width: 130px;
     }
+
     .backImg2 {
         bottom: -26px;
         right: 42px;
@@ -869,35 +910,6 @@ h2 {
         font-size: var(--paragraph-mobile);
     }
 
-    /* animation when hovering */
-    #desktop-menu li:not(:last-child) a::after,
-    #desktop-menu li:not(:last-child) a::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(to right, #DCF1A7, #FAFDF2);
-        bottom: -5px;
-        left: 0;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 0.4s ease-out;
-    }
-
-    #desktop-menu li:not(:last-child) a::before {
-        top: -5px;
-        transform-origin: left;
-    }
-
-    #desktop-menu li:not(:last-child) a:hover::after,
-    #desktop-menu li:not(:last-child) a:hover::before {
-        transform: scaleX(1);
-    }
-
-    #desktop-menu li:not(:last-child) a:active {
-        color: var(--green70);
-    }
-
     #contact a {
         background-color: var(--green70);
         border: 1px solid;
@@ -905,10 +917,6 @@ h2 {
         padding: 12px 16px;
         margin: 16px 80px 16px 30px;
         display: inline-flex;
-    }
-
-    #contact a:hover {
-        background-color: var(--green85);
     }
 
     #desktop-menu li:last-child a {
@@ -971,7 +979,9 @@ h2 {
         margin-top: 40px;
         margin-bottom: 50px;
     }
-    .starterCTA, .demoCTA {
+
+    .starterCTA,
+    .demoCTA {
         font-size: var(--paragraph-mobile);
     }
 
@@ -983,6 +993,7 @@ h2 {
     .hero-text-wrapper p {
         margin: 0;
     }
+
     #reviews-desktop p {
         font-size: 1.125rem;
     }
@@ -1056,9 +1067,11 @@ h2 {
         width: 70%;
         margin: 5px auto;
     }
+
     .category {
         font-size: var(--paragraph-laptop);
     }
+
     .banner-item p {
         font-size: var(--paragraph-laptop);
     }
@@ -1089,6 +1102,7 @@ h2 {
         justify-content: space-between;
         align-items: center;
     }
+
     .banner-creator-text h4 {
         font-size: var(--h4-laptop);
     }
@@ -1100,9 +1114,6 @@ h2 {
     .banner-icons {
         padding-top: 0;
     }
-
-    /* animation for icons */
-
 
     /* testimonial section starts here */
     #testimonial-section {
@@ -1131,6 +1142,7 @@ h2 {
     .arrow-wrapper {
         margin-top: 40px;
     }
+
     .quote p {
         font-size: var(--paragraph-laptop);
     }
@@ -1144,12 +1156,15 @@ h2 {
     .pricing-card {
         margin: 0;
     }
+
     .pricing-card h3 {
         font-size: 1.5rem;
     }
+
     .pricing-card h4 {
         font-size: var(--paragraph-laptop);
     }
+
     .pricing-card p {
         font-size: var(--paragraph-laptop);
     }
@@ -1191,138 +1206,288 @@ h2 {
     .links {
         flex-direction: row;
     }
+
+    /* * hovering on/ active links animation */
+    .cta_Join a:hover {
+        background-color: var(--darkgreen30);
+    }
+
+    #desktop-menu li a:active {
+        color: var(--green70);
+    }
+
+    #contact a:hover {
+        background-color: var(--green85);
+    }
+
+    /* animation when hovering on nav bar */
+    #desktop-menu li:not(:last-child) a::after,
+    #desktop-menu li:not(:last-child) a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, #DCF1A7, #FAFDF2);
+        bottom: -5px;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s ease-out;
+    }
+
+    #desktop-menu li:not(:last-child) a::before {
+        top: -5px;
+        transform-origin: left;
+    }
+
+    #desktop-menu li:not(:last-child) a:hover::after,
+    #desktop-menu li:not(:last-child) a:hover::before {
+        transform: scaleX(1);
+    }
+
+    /* here ends nav bar hovering style */
+    .starterCTA:hover {
+        background-color: var(--green85);
+    }
+
+    .demoCTA:hover {
+        box-shadow: 0 0 20px rgba(203, 234, 123, 0.5);
+    }
+
+    .like-icon svg {
+        color: "#4C4C4C";
+        fill: none;
+        stroke: currentColor;
+        transition: color 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
+    }
+
+    .like-icon:hover svg {
+        color: #c32020;
+        fill: #c32020;
+        stroke: #c32020;
+    }
+
+    .save-icon svg {
+        color: "#4c4c4c";
+        fill: none;
+        stroke: currentColor;
+        transition: color 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
+    }
+
+    .save-icon:hover svg {
+        color: var(--darkgreen30);
+        fill: var(--darkgreen30);
+        stroke: var(--darkgreen30);
+    }
+
+    .arrow-right:hover,
+    .arrow-left:hover {
+        background-color: var(--green85);
+    }
+
+    .banner-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(203, 234, 123, 0.5);
+    }
+
+    .pricing-card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(203, 234, 123, 0.5);
+    }
+
+    .plan-CTA:hover {
+        background-color: var(--green85);
+    }
+
+    .footer-nav ul li a:hover {
+        color: var(--green85);
+    }
+
+    .go-top-CTA span:hover {
+        background-color: var(--darkgreen40);
+    }
+
+    .email:hover,
+    .phone:hover,
+    .location:hover {
+        background-color: var(--darkgreen15);
+    }
 }
 
 /* here starts breakpoint for desktop */
 @media (min-width: 1441px) {
-     .headerBanner {
+    .headerBanner {
         padding: 14px 162px;
     }
+
     #desktop-menu li a {
         font-size: var(--paragraph-desktop);
     }
+
     .hero-text-wrapper {
         padding-left: 50px;
         padding-right: 162px;
     }
+
     .cta_Join a {
         font-size: var(--paragraph-desktop);
     }
+
     .underlinedText {
         font-size: 1.7rem;
     }
+
     .largeText {
         font-size: 3.65rem;
     }
+
     .regularP {
         font-size: var(--paragraph-desktop);
     }
-    .starterCTA, .demoCTA {
+
+    .starterCTA,
+    .demoCTA {
         font-size: var(--paragraph-desktop);
     }
+
     #reviews-desktop p {
         font-size: 1.3rem;
     }
+
     #hero-wrapper {
         margin-bottom: 106px;
+        margin-top: 43px;
     }
+
     /* features desction starts here */
     #features-section {
         margin: 0 162px 182px 162px;
     }
+
     h2 {
         font-size: var(--h2-desktop);
     }
+
     .description {
         font-size: var(--paragraph-desktop);
     }
+
     .cards-wrapper {
         margin-top: 80px;
         gap: 30px;
     }
+
     .cards-item h3 {
         font-size: var(--h3-desktop);
     }
+
     .cards-item p {
         font-size: var(--paragraph-desktop);
     }
+
     /* blog section starts here */
     #blog-section {
         margin: 0 162px 182px 162px;
     }
+
     .banner-wrapper {
         margin-top: 80px;
         gap: 30px;
     }
+
     .category {
         font-size: var(--paragraph-desktop);
     }
+
     .banner-item h3 {
         font-size: 1.6rem;
     }
+
     .banner-item p {
         font-size: var(--paragraph-desktop);
     }
+
     .banner-creator-text h4 {
         font-size: var(--h4-desktop);
     }
+
     /* testimonial section starts here */
     #testimonial-section {
         margin: 0 162px 177px 162px;
     }
+
     .quote p {
         font-size: var(--paragraph-desktop);
     }
+
     .customer h4 {
         font-size: var(--paragraph-desktop);
     }
+
     .testimonial-wrapper {
         margin-top: 80px;
     }
+
     .arrow-wrapper {
         margin-top: 50px;
     }
+
     /* pricing section starts here */
     #pricing-section {
         margin: 0 162px 150px 162px;
     }
-    .monthly, .yearly, .slider-text {
+
+    .monthly,
+    .yearly,
+    .slider-text {
         font-size: var(--paragraph-desktop);
     }
+
     .price-slider {
         margin-top: 80px;
     }
+
     .pricing-container {
         margin-top: 50px;
         gap: 30px;
     }
+
     .pricing-card h3 {
         font-size: 1.85rem;
     }
-    .pricing-card h4, .pricing-card p {
+
+    .pricing-card h4,
+    .pricing-card p {
         font-size: var(--paragraph-desktop);
     }
+
     .plan-CTA {
         font-size: var(--paragraph-desktop);
     }
+
     /* footer starts here */
     .footer-container {
         padding: 50px 162px;
     }
+
     .footer-nav ul li a {
         font-size: var(--paragraph-desktop);
     }
+
     .go-top-CTA a {
         font-size: var(--paragraph-desktop);
     }
-  .copyright {
-    font-size: var(--paragraph-desktop);
-  }
-  .links a {
-    font-size: var(--paragraph-desktop);
-  }
-  .footer-card {
-    margin-top: 50px;
-    padding: 16px 20px;
-  }
+
+    .copyright {
+        font-size: var(--paragraph-desktop);
+    }
+
+    .links a {
+        font-size: var(--paragraph-desktop);
+    }
+
+    .footer-card {
+        margin-top: 50px;
+        padding: 16px 20px;
+    }
 }

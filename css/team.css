@@ -1,6 +1,7 @@
 #process-section {
     margin-bottom: 0;
 }
+
 .members-selection {
     background-color: var(--darkgreen20);
     border-bottom-left-radius: 10px;
@@ -10,23 +11,112 @@
     overflow-x: auto;
     padding: 20px;
 }
+
 .members-selection ul {
     display: flex;
     /* if there is space between words, will not break line */
     white-space: nowrap;
     gap: 20px;
 }
+
 .members-selection ul li {
     list-style: none;
     padding: 12px 18px;
 }
+
 .members-selection ul li:first-of-type {
-   background-color: var(--darkgreen25);
-   border: 1px solid var(--darkgreen30);
-   border-radius: 6px;
+    background-color: var(--darkgreen25);
+    border: 1px solid var(--darkgreen30);
+    border-radius: 6px;
 }
+
 .members-selection ul li a {
     text-decoration: none;
     color: var(--absolutewhite);
     font-size: var(--paragraph-mobile);
+}
+
+.members-photos-container {
+    margin: 30px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+ .members-photos img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+.members-photos {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.members-text {
+    text-align: left;
+    background-color: var(--green95);
+    padding: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    width: 80%;
+    top: 87%;
+    left: 0;
+}
+
+.members-text h3 {
+    color: var(--grey15);
+    font-size: 1.250rem;
+    margin-bottom: 2px;
+}
+
+.members-text p {
+    color: var(--grey30);
+    font-size: var(--paragraph-laptop);
+}
+
+/* here starts breakpoint for laptop */
+@media (min-width: 970px) {
+    .members-selection {
+        margin: 0 80px;
+    }
+
+    .members-selection ul {
+        padding: 0 60px;
+        justify-content: space-between;
+    }
+
+    .members-selection ul li a {
+        font-size: var(--paragraph-laptop);
+    }
+
+    .members-photos-container {
+        margin: 30px 80px 0 80px;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .members-selection ul li a:hover {
+        color: var(--darkgreen60);
+    }
+}
+/* here starts breakpoint for desktop */
+@media (min-width: 1441px) {
+.members-selection {
+    margin: 0 162px;
+}
+.members-selection ul {
+    padding: 0 130px;
+}
+.members-selection ul li {
+    padding: 14px 20px;
+}
+.members-selection ul li a {
+    font-size: var(--paragraph-desktop);
+}
+.members-photos-container {
+    margin: 40px 162px 0 162px;
+    gap: 30px;
+}
 }
